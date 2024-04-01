@@ -20,8 +20,15 @@ class Solution {
         */
         
         //Method 2 
+        /*
         String[] strArr = s.split(" ");
         String lastString = strArr[strArr.length - 1];
         return lastString.length();
+        */
+        
+        //Method 3 
+        s = s.trim();
+        return s.length() - 1 - s.lastIndexOf(" ");
+        
     }
 }
