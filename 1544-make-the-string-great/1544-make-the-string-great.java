@@ -1,20 +1,15 @@
 class Solution {
     public String makeGood(String s) {
-         Stack<Character> stack = new Stack<>();
+        StringBuilder sb = new StringBuilder();
         
-        for (char c : s.toCharArray()) {
-            if (!stack.isEmpty() && Math.abs(c - stack.peek()) == 32) {
-                stack.pop();
-            } else {
-                stack.push(c);
-            }
+        for(char c : s.toCharArray()){
+            if(sb.length() > 0 && Math.abs(c - sb.charAt(sb.length()-1)) == 32){
+                //this implies the current char and the last char are of opposite case
+                sb.deleteCharAt(sb.length()-1); // remove the bad pair
+            }else{
+                sb.append(c);
+            }  
         }
-        
-        StringBuilder result = new StringBuilder();
-        while (!stack.isEmpty()) {
-            result.insert(0, stack.pop());
-        }
-        
-        return result.toString();
+        return sb.toString();
     }
 }
