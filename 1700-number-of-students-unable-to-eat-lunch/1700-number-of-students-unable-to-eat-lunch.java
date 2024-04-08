@@ -15,7 +15,7 @@ class Solution {
         }
         
         //processing all students
-        while(!queue.isEmpty()){
+        while(!queue.isEmpty() && queue.size() > count ){
              //now compare top of stack and queue
             if(stack.peek() == queue.peek()){
                 stack.pop();
@@ -25,10 +25,6 @@ class Solution {
                 int moveStudent = queue.poll();
                 queue.offer(moveStudent);
                 count++;
-            }
-            
-            if(queue.size() == count){
-                break;
             }
         }
         return queue.size();
