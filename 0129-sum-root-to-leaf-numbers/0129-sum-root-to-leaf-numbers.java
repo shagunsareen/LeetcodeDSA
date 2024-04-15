@@ -14,32 +14,23 @@
  * }
  */
 class Solution {
-    StringBuilder str = new StringBuilder();
-    int sum = 0;
-    
-    public int sumNumbers(TreeNode root) {  
-        getSum(root);
-        return sum;
+    public int sumNumbers(TreeNode root) {
+        
+       return  sum(root , 0);
+        
     }
     
-    
-    private void getSum(TreeNode root){
-        //base case 
-        if(root == null)
-        { 
-            return; 
+    public int sum(TreeNode root , int currentSum){
+        if(root == null){
+            return 0;
         }
         
-        str.append(root.val);
+         currentSum = currentSum * 10 + root.val;
         
-        //if we reach leaf node 
-        if(root.left == null && root.right == null){
-            sum += Integer.parseInt(str.toString());
-            //System.out.println(str.toString());
+        if(root.right == null && root.left ==null){
+            return currentSum;
         }
-
-        getSum(root.left); 
-        getSum(root.right);
-        str.deleteCharAt(str.length() - 1);
+        
+        return sum(root.left , currentSum) + sum(root.right , currentSum);
     }
 }
