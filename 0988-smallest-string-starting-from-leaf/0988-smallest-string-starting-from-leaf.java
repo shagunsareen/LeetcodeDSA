@@ -14,7 +14,7 @@
  * }
  */
 class Solution {
-    String smallestString = "";
+    /*String smallestString = "";
 
     public String smallestFromLeaf(TreeNode root) {
         dfs(root, "");
@@ -53,5 +53,38 @@ class Solution {
             dfs(root.right, currentString);
         }
 
+    }*/
+    
+    StringBuilder strB = new StringBuilder();
+    String smallerString = "";
+    
+    public String smallestFromLeaf(TreeNode root) {
+        getSmallestString(root);
+        return smallerString;
     }
+    
+    private void getSmallestString(TreeNode root){
+        if(root == null)
+            return;
+        
+        //append curr value to string
+        strB.append((char)(root.val + 'a'));
+        
+        
+        //if its leaf node
+        if(root.left == null && root.right == null){
+            //check the strB formed , first reverse it because we need string from leaf to root, check if it is smaller than res if yes update the res
+            //System.out.println("Reached Leaf Node : " + strB.toString());
+            String currString = new StringBuilder(strB).reverse().toString();
+            if(smallerString.isEmpty() || smallerString.compareTo(currString) > 0){
+                 smallerString = currString;
+            }  
+        }
+        
+        getSmallestString(root.left);
+        getSmallestString(root.right);
+        
+        //System.out.println("Before going back : " + strB.toString());
+        strB.deleteCharAt(strB.length() - 1);  
+    }     
 }
