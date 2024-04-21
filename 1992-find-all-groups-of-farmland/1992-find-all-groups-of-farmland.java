@@ -91,6 +91,8 @@ class Solution {
         //then find if we can get max bottom right point
         dfs(land, row+1, col); //Bottom 
         dfs(land, row, col+1); //Right
+        dfs(land, row-1, col); //Up
+        dfs(land, row, col-1); //Left
     }
     
 }
