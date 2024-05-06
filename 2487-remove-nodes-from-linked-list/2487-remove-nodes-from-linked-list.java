@@ -18,7 +18,7 @@ class Solution {
         //iterate list given and insert elements in stack
         while(dummy!=null){
             int curr = dummy.val;
-            if(stack.isEmpty() || stack.peek() > curr){ 
+            /*if(stack.isEmpty() || stack.peek() > curr){ 
                 stack.push(dummy.val);
                 dummy = dummy.next; //move to the next element
             }else{
@@ -28,10 +28,16 @@ class Solution {
                 }
                 stack.push(dummy.val);
                 dummy = dummy.next;
-            }     
+            }*/ 
+            
+            while(!stack.isEmpty() && stack.peek() < curr){
+                stack.pop();
+            }
+            stack.push(dummy.val);
+            dummy = dummy.next;
         }
         
-        ListNode head2 = null;
+        /*ListNode head2 = null;
         if(!stack.isEmpty()){
             head2 = new ListNode(stack.pop());
         }
@@ -42,10 +48,19 @@ class Solution {
             dummy2 = dummy2.next;
         }
         
-        return reverseLinkedList(head2);
+        return reverseLinkedList(head2);*/
+        
+        ListNode reverseHead = null;
+        while(!stack.isEmpty()){
+            ListNode newNode = new ListNode(stack.pop());
+            newNode.next = reverseHead;
+            reverseHead = newNode;
+        }
+        
+        return reverseHead;
     }
     
-    private ListNode reverseLinkedList(ListNode list){
+    /*private ListNode reverseLinkedList(ListNode list){
         ListNode prev = null;
         ListNode curr = list;
         ListNode upcoming;
@@ -58,5 +73,5 @@ class Solution {
         }
         
         return prev;
-    }
+    }*/
 }
