@@ -15,16 +15,22 @@
  */
 class Solution {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
-        if(root==null) {
+        //base case
+        if(root == null){
             return null;
         }
-        TreeNode left = removeLeafNodes(root.left,target);
-        TreeNode right = removeLeafNodes(root.right,target);
-        if(left==null && right==null && root.val==target) {
+        
+        //go to left subtree and delete target nodes
+        root.left = removeLeafNodes(root.left, target);
+        //go to right subtree and delete target nodes
+        root.right = removeLeafNodes(root.right, target);
+        
+        //check if this is target node
+        if(root.left == null && root.right == null && root.val == target){
             return null;
         }
-        root.left=left;
-        root.right=right;
+        
+        //otherwise
         return root;
     }
 }
