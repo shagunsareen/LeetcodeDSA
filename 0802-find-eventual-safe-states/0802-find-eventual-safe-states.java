@@ -1,5 +1,7 @@
 class Solution {
-    public List<Integer> eventualSafeNodes(int[][] graph) {
+   /* public List<Integer> eventualSafeNodes(int[][] graph) {
+   
+    // Link : https://takeuforward.org/data-structure/find-eventual-safe-states-dfs-g-20/
         //if there is a cycle in the graph then those nodes can't be considered as safe nodes , for all other nodes which are not in cycle mark them as safe nodes
        int n = graph.length;
        int[] visited = new int[n]; //nodes start from 0 
@@ -39,7 +41,7 @@ class Solution {
             }
         }*/
         
-        if (visited[node] == 1) {
+       /* if (visited[node] == 1) {
             return true; // Cycle detected
         }
         if (visited[node] == 2) {
@@ -53,9 +55,40 @@ class Solution {
             }
         }
         
+        
+        //no cycle is detected meaning the node is safe node and all nodes prior to this are also safe nodes 
         //unvisit it from the current path
         visited[node] = 2;
         checkNodes[node] = 1;
         return false;
+    }*/
+    
+    public List<Integer> eventualSafeNodes(int[][] graph) {
+       int n = graph.length;
+       int [] safe = new int[n]; //nodes start from 0 
+       ArrayList<Integer> list = new ArrayList<>();
+        
+       for(int i=0; i<n; i++){
+             if(dfs(i, graph, safe)){ //true meaning its safe node
+                 list.add(i);
+             }
+       }   
+       return list;
     }
+    
+     private boolean dfs(int node, int[][] graph, int[] safe){ 
+        if(safe[node] != 0){
+            return safe[node] == 2;
+        }
+    
+        safe[node] = 1; //unsafe
+        //check neighbouring nodes
+        for(int adjacentNode : graph[node]){  
+                if(!dfs(adjacentNode, graph, safe)){
+                    return false;
+                }
+         }       
+         safe[node] = 2; // safe
+         return true;
+     }
 }
