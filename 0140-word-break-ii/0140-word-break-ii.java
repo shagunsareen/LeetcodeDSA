@@ -40,7 +40,10 @@ class Solution {
             }
         }
     }*/
-    List<String> result;
+    
+    //Approach 1 : Backtracking , TC :O(2 power n), SC :O(2 power n)
+    //since here 2 variables are changing hence memoization can't be done.
+    /*List<String> result;
     
     public List<String> wordBreak(String s, List<String> wordDict) {
         result = new ArrayList<>();
@@ -73,5 +76,48 @@ class Solution {
                  currentSentence.setLength(currentLength); //reset currentSentence to its original length;
              }
          }     
-     }
+     }*/
+    
+    
+    //Approach 2
+    //DP - Memoization
+    //List<String> result;
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        //result = new ArrayList<>();
+        return backtrack(s, new HashSet<String>(wordDict), new HashMap<String,  List<String>>()); 
+        //return result;
+    }
+    
+    private List<String> backtrack(
+        String remainingStr,
+        Set<String> wordSet,
+        Map<String, List<String>> map
+    ){
+        if(map.containsKey(remainingStr)){
+            return map.get(remainingStr);
+        }
+        
+        // Base case: when the string is empty, return a list containing an empty string
+        if (remainingStr.isEmpty()) return Collections.singletonList("");
+        
+         List<String> result = new ArrayList<>();
+        
+        //check for every length of substring and if already substring of that length is processed then return the result there only
+        for(int l = 1; l<=remainingStr.length(); l++){
+            String word = remainingStr.substring(0,l);
+            
+            if(wordSet.contains(word)){
+                String remainingWord = remainingStr.substring(l);
+                
+                //check for the nextword
+                List<String> nextList = backtrack(remainingWord, wordSet, map);
+                for(String next : nextList){
+                    result.add(word + (next.isEmpty() ? "" : " ") + next);
+                }
+            }
+        }
+        
+        map.put(remainingStr, result);
+        return result;
+    }
 }
