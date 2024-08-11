@@ -1,5 +1,5 @@
 class Solution {
-    public boolean wordBreak(String s, List<String> wordDict) {
+    /*public boolean wordBreak(String s, List<String> wordDict) {
         int n = s.length();
         int[][] dp = new int[n][n];
 
@@ -33,5 +33,40 @@ class Solution {
        boolean ans = solve(start, end+1, str, dict, dp); 
        dp[start][end] = ans ? 1 : 0;
        return ans;
+    }*/
+    
+    Boolean[] present;
+    public boolean wordBreak(String s, List<String> wordDict) {
+        present = new Boolean[s.length()];
+        return checkWordBreak(s, new HashSet<>(wordDict), 0);
+    }
+    
+    private boolean checkWordBreak(String s, HashSet<String> set, int start){
+        //till where will the index go
+        if(start == s.length()){
+            return true;
+        }
+        
+        //check if string is already evaludated
+        if(present[start]!=null){
+            return present[start];
+        }
+        
+        //we will deal with substrings so end will be start + 1 else we would have taken end = start 
+        for(int end = start+1; end<=s.length() ; end++){
+            String substr = s.substring(start, end);
+            
+            //check if this is present in the hashset or not 
+            if(set.contains(substr)){
+                //check rest of the word if that is also present then return true
+                if(checkWordBreak(s, set, end)){
+                    present[start] = true;
+                    return true;
+                }
+            }
+        }
+        
+        present[start] = false;
+        return false;
     }
 }
