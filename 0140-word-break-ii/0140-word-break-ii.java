@@ -1,6 +1,6 @@
 class Solution {
 
-    public List<String> wordBreak(String s, List<String> wordDict) {
+    /*public List<String> wordBreak(String s, List<String> wordDict) {
         // Convert wordDict to a set for O(1) lookups
         Set<String> wordSet = new HashSet<>(wordDict);
         List<String> results = new ArrayList<>();
@@ -39,5 +39,39 @@ class Solution {
                 currentSentence.setLength(currentLength);
             }
         }
+    }*/
+    List<String> result;
+    
+    public List<String> wordBreak(String s, List<String> wordDict) {
+        result = new ArrayList<>();
+        StringBuilder currentSentence = new StringBuilder();
+        backtrack(s, new HashSet<String>(wordDict), currentSentence, 0);
+        return result;
     }
+    
+     private void backtrack(
+        String s,
+        Set<String> wordSet,
+        StringBuilder currentSentence,
+        int startIndex
+    ){
+         //base case 
+         if(startIndex == s.length()){
+             result.add(currentSentence.toString().trim());
+             return;
+         }
+         
+         //fix the end index of substring to check whether it is in set or we have to move forward
+         for(int end = startIndex + 1; end<=s.length(); end++){
+            String word = s.substring(startIndex, end);
+             if(wordSet.contains(word)){
+                 //append it into a sentence 
+                 int currentLength = currentSentence.length();
+                 currentSentence.append(word).append(" "); //DO  
+                 //get the rest of the words
+                 backtrack(s, wordSet, currentSentence, end); //end is the start index for rest of the string     
+                 currentSentence.setLength(currentLength); //reset currentSentence to its original length;
+             }
+         }     
+     }
 }
