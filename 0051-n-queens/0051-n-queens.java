@@ -1,5 +1,5 @@
 class Solution {
-    List<List<String>> res = new ArrayList<List<String>>();
+    /*List<List<String>> res = new ArrayList<List<String>>();
     
     HashSet<Integer> col = new HashSet<Integer>();
     HashSet<Integer> leftDiagonal = new HashSet<Integer>();
@@ -70,78 +70,65 @@ class Solution {
             list.add(str.toString());
         }    
         return list;
+    }*/
+    
+    List<List<String>> result;
+    int[][] board; 
+    int size = 0;
+    HashSet<Integer> colSet = new HashSet<Integer>();
+    HashSet<Integer> leftDiagonalSet = new HashSet<Integer>();
+    HashSet<Integer> rightDiagonalSet = new HashSet<Integer>(); 
+    public List<List<String>> solveNQueens(int n) {
+        size = n;
+        result = new ArrayList<>();
+        //create a board 
+        board = new int[n][n];
+        //iterate over all rows and try to put queen on all columns and see if its valid or not
+        getQueensPlacement(0);
+        return result;
     }
     
     
-    
-    /*//hashset for column
-    HashSet<Integer> col = new HashSet<Integer>();
-    // hashset for right diagonal
-    HashSet<Integer> rd = new HashSet<Integer>();
-    //hashset for left diagonal 
-    HashSet<Integer> ld = new HashSet<Integer>();
-
-    List<List<String>> res = new ArrayList<List<String>>();
-
-    int N;
-    int mat[][];
-
-    // update every col with . in the matrix
-	public List<List<String>> solveNQueens(int A) {
-        N = A; // no. of rows and columns
-        mat =  new int[N][N];
-
-        for(int[] row : mat){
-            Arrays.fill(row, 0);
-        }
-        printNQueens(0);
-        return res;
-	}
-
-    private void printNQueens(int row){
-
-        //Base condition
-        if(row == N){ //if we have reached row as out of bound then print 
-            res.add(getStringRepresentation(mat));
+    private void getQueensPlacement(int row){
+        //base case 
+        if(row == size){
+            result.add(printResult(board));
             return;
         }
-
-        //Choices to place Queen is every col in each row
-        for(int c=0; c<N; c++){ // check for every col if we can place queen there or not
-            //Check if we already have queen at col or in right diagonal or in left diagonal
-            if(!col.contains(c) && !rd.contains(row+c) && !ld.contains(row-c)){
-                //DO : placed queen
-                mat[row][c] = 1; 
-                col.add(c);
-                rd.add(row+c);
-                ld.add(row-c);
-
-                // go and place the next queen
-                printNQueens(row+1);
-
-                //UNDO : unplace queen 
-                mat[row][c] = 0;
-                col.remove(c);
-                rd.remove(row+c);
-                ld.remove(row-c);
+        
+        //check for every row col pair
+        for(int col=0; col<size; col++){
+            //check if already queen is in this row or col or diagonal
+            if(!colSet.contains(col) && !leftDiagonalSet.contains(row-col) && !rightDiagonalSet.contains(row+col)){
+                board[row][col] = 1;
+                colSet.add(col);
+                leftDiagonalSet.add(row-col);
+                rightDiagonalSet.add(row+col);
+                
+                getQueensPlacement(row+1);
+                
+                board[row][col] = 0;
+                colSet.remove(col);
+                leftDiagonalSet.remove(row-col);
+                rightDiagonalSet.remove(row+col);
             }
-        }  
+        }   
     }
-
-    ArrayList<String> getStringRepresentation(int[][] mat){
-        ArrayList<String> list = new ArrayList<>();
-
-        for(int row=0; row<mat.length; row++){
-            StringBuilder str = new StringBuilder(mat[0].length);
-            for(int col=0; col<mat[0].length; col++){
-                if(mat[row][col] == 0){
+    
+    
+    private ArrayList<String> printResult(int[][] board){  
+        ArrayList<String> result = new ArrayList<>();
+        for(int row = 0; row<board.length; row++){
+            StringBuilder str = new StringBuilder();
+            for(int col = 0; col<board.length; col++){
+                if(board[row][col]==0){
                     str.append('.');
                 }else{
                     str.append('Q');
                 }
             }
-            list.add(str.toString());
+             result.add(str.toString());
         }
-        return list;
-    }*/
+       return result;
+    }    
 }
