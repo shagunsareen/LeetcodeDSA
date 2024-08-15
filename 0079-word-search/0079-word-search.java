@@ -40,7 +40,7 @@ class Solution {
         return false;
     }*/
     
-    public boolean exist(char[][] board, String word) {
+    /*public boolean exist(char[][] board, String word) {
         int m = board.length;
         int n = board[0].length;
         boolean result = false;
@@ -97,6 +97,114 @@ class Solution {
         //make the current element as not visited 
         visited[row][col] = false;
         return false;
+    }*/
+    
+    
+    boolean[][] visited;
+    
+    public boolean exist(char[][] board, String word) {  
+        char[] input = word.toCharArray();
+        int size = input.length;
+        int rows = board.length;
+        int cols = board[0].length;
+        int startRow = -1;
+        int startCol = -1;
+        visited = new boolean[rows][cols];
+        
+        //find the first element of the word in the board
+        for(int row = 0; row<rows; row++){
+            for(int col = 0; col<cols; col++){
+                if(input[0] == board[row][col]){
+                    startRow = row;
+                    startCol = col;
+                    if(backtrack(startRow, startCol, board, input, 0)){
+                        return true;
+                    } 
+                }
+            }
+        }
+        
+        return false;
     }
+    
+    int[][] dirs = {{0,-1}, {0,1}, {1, 0}, {-1, 0}};
+    
+    private boolean backtrack(int row, int col, char[][] board, char[] input, int index){
+        //base case 
+        //check if we have found the entire word
+        if(index == input.length){
+            return true;
+        }
+        
+        //check if the new points are valid or out of bound
+        if(row < 0 || col < 0 || row >= board.length || col >= board[0].length){
+            return false;
+        }
+ 
+        //check if this is not already visited then mark it as visited if word equals to the next word we are looking for
+        if(!visited[row][col] && input[index] == board[row][col]){ 
+            //System.out.println("ROW : "+row + " COL : "+col + " input word : "+ input[index] + " Board word : "+ board[row][col]);
+            visited[row][col] = true;
+        
+            //we have start row so we can traverse in all 4 directions and check whether we get true or not
+            for(int[] dir : dirs){
+
+                int newRow = dir[0] + row;
+                int newCol = dir[1] + col;
+                
+                //if points are valid then move forward to find other words
+                if(backtrack(newRow, newCol, board, input, index+1)){
+                    return true;
+                }
+            }
+            
+            visited[row][col] = false;
+        }
+        
+        return false;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
