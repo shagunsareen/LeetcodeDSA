@@ -14,10 +14,8 @@
  * }
  */
 class Solution {
-    public int sumNumbers(TreeNode root) {
-        
-       return  sum(root , 0);
-        
+    /*public int sumNumbers(TreeNode root) {       
+       return sum(root , 0);     
     }
     
     public int sum(TreeNode root , int currentSum){
@@ -32,5 +30,75 @@ class Solution {
         }
         
         return sum(root.left , currentSum) + sum(root.right , currentSum);
+    }*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    public int sumNumbers(TreeNode root) {       
+       return sum(root , 0);     
     }
+    
+    private int sum(TreeNode node, int sum){
+        if(node == null){
+            return 0;
+        }
+        
+        //create sum including current node val
+        sum = sum*10 + node.val;
+        
+        //check if you have reached leaf node then create the number
+        if(node.left == null && node.right == null){
+            return sum;    
+        }
+        
+        int leftSum = sum(node.left, sum);
+        int rightSum = sum(node.right, sum);
+        
+        return leftSum + rightSum;
+    }
+    
+    
+    
+    
+    
+    
 }
