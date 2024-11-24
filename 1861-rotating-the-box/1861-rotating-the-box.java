@@ -1,33 +1,40 @@
-/*class Solution {
-    public char[][] rotateTheBox(char[][] box) {
-        
+class Solution {
+    public char[][] rotateTheBox(char[][] box) {      
         int rows = box.length;
         int cols = box[0].length;
         
-        //System.out.println(rows + " - "+ cols);
-        
         char[][] res = new char[cols][rows];
         
-        for(int row = rows-1; row>=0; row--){
-            for(int col = cols-1; col>=0; col--){        
+        for(int row = 0; row<rows; row++){
+            
+            int empty = cols-1;
+            
+            for(int col = cols-1; col>=0; col--){
+                
                 char curr = box[row][col];
-                if(col != cols-1){
-                    char prev = res[col+1][rows-1-row];
-                    if(curr == '#' && prev == '.'){
-                        curr = '.';
-                        prev = '#';
-                        res[col+1][rows-1-row] = prev;
-                    }
-                } 
-                //first find at what index will the new value be stored 
-                res[col][rows-1-row] = curr;
-            }
+                
+                //System.out.println("Row : "+ row + " Col : "+col + " Curr : "+curr);
+                
+                if(curr == '#'){
+                   res[empty][rows-1-row] = '#';
+                    if(empty!=col){
+                         res[col][rows-1-row] = '.';
+                    } 
+                   empty--;
+                }else if(curr == '*'){
+                    res[col][rows-1-row] = '*';
+                    empty = col-1;
+                }else{
+                    res[col][rows-1-row] = '.';
+                }
+            } 
+            
         }
         return res;
     }
-}*/
+}
     
-class Solution {
+/*class Solution {
 
     public char[][] rotateTheBox(char[][] box) {
         int m = box.length;
@@ -62,4 +69,4 @@ class Solution {
         }
         return result;
     }
-}
+}*/
