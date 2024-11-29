@@ -43,11 +43,16 @@ class Solution {
                     
                     //time required to move to next cell, we move 1 step at a time so if time req to go to next cell is curr time + 1 or                                                            lesser than curr time then we can go there as this seems reachable 
                        
-                    int diff = grid[newRow][newCol] - time; 
+                    /*int diff = grid[newRow][newCol] - time; 
                     if(diff<=1){
                         newTime = time + 1; //cell is reachable & time will increase by 1
                     }else{
                         newTime = time+1+(diff/2)*2; //we have to wait till time diff is <=1
+                    }*/
+                    
+                    newTime = time + 1;
+                    if(grid[newRow][newCol] > newTime){//even if we take next step we can't visit next node so wait
+                        newTime = (grid[newRow][newCol] - time)%2!=0 ? grid[newRow][newCol] : grid[newRow][newCol] + 1;
                     }
                     
                     pq.add(new int[]{newRow, newCol, newTime});
