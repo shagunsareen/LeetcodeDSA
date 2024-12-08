@@ -1,40 +1,35 @@
 public class Solution {
 
-    public boolean canChange(String start, String target) {
-        int startLength = start.length();
-        // Pointers for start string and target string
-        int startIndex = 0, targetIndex = 0;
-
-        while (startIndex < startLength || targetIndex < startLength) {
-            // Skip underscores in start
-            while (
-                startIndex < startLength && start.charAt(startIndex) == '_'
-            ) {
+    public boolean canChange(String start, String target) {        
+        int startIndex = 0;
+        int targetIndex = 0;
+        
+        while(startIndex < start.length() || targetIndex < target.length()){
+                //skip underscore 
+            while(startIndex < start.length() && start.charAt(startIndex) == '_'){
                 startIndex++;
             }
-            // Skip underscores in target
-            while (
-                targetIndex < startLength && target.charAt(targetIndex) == '_'
-            ) {
+            while(targetIndex < target.length() && target.charAt(targetIndex) == '_'){
                 targetIndex++;
             }
-            // If one string is exhausted, both should be exhausted
-            if (startIndex == startLength || targetIndex == startLength) {
-                return startIndex == startLength && targetIndex == startLength;
+
+           // If one string is exhausted, both should be exhausted
+            if(startIndex == start.length() || targetIndex == target.length()){
+                return startIndex == start.length() && targetIndex == target.length();
             }
 
-            // Check if the pieces match and follow movement rules
-            if (
-                start.charAt(startIndex) != target.charAt(targetIndex) ||
-                (start.charAt(startIndex) == 'L' && startIndex < targetIndex) ||
-                (start.charAt(startIndex) == 'R' && startIndex > targetIndex)
-            ) return false;
+            //now that we have reached chars 
+            if(start.charAt(startIndex) != target.charAt(targetIndex) ||
+              start.charAt(startIndex) == 'L' && startIndex < targetIndex ||
+              target.charAt(targetIndex) == 'R' && startIndex > targetIndex){
+                return false;
+            }
 
+            //else if all conditions are fine then increment start and target index 
             startIndex++;
             targetIndex++;
         }
-
-        // If all conditions are satisfied, return true
+        
         return true;
     }
 }
