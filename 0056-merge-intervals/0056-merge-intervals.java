@@ -1,23 +1,19 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
-        //this will sort the array on the basis of start points of the arrays
+        //sort the intervals to. know which can overlap 
         Arrays.sort(intervals, (a,b) -> Integer.compare(a[0], b[0]));
-        
-        List<int[]> result = new ArrayList<>();
-        int[] newInterval = intervals[0];
-        result.add(newInterval);
-        
+
+        //we dont know how many elements would be there after merging hence int[][] can't be declared since size is not known, hence take list which stores merged intervals
+        LinkedList<int[]> merged = new LinkedList<>();
         for(int[] interval : intervals){
-            
-            //check for overlap 
-            if(interval[0] <= newInterval[1]){
-                newInterval[1] = Math.max(newInterval[1], interval[1]);   
+
+            if(merged.isEmpty() || merged.getLast()[1] < interval[0]){ //non overlapping 
+                merged.add(interval);
             }else{
-                newInterval = interval;
-                result.add(newInterval);
+                merged.getLast()[1] = Math.max(merged.getLast()[1], interval[1]);
             }
         }
-        
-        return result.toArray(new int[result.size()][]);
+
+        return merged.toArray(new int[merged.size()][]);
     }
 }
