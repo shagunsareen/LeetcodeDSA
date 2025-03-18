@@ -82,6 +82,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Linked List
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0021-merge-two-sorted-lists) |
 | [0092-reverse-linked-list-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0092-reverse-linked-list-ii) |
 | [0141-linked-list-cycle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0141-linked-list-cycle) |
@@ -89,6 +90,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Recursion
 |  |
 | ------- |
+| [0002-add-two-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0021-merge-two-sorted-lists) |
 | [0206-reverse-linked-list](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0206-reverse-linked-list) |
 ## Two Pointers
@@ -99,4 +101,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2308-divide-array-into-equal-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2308-divide-array-into-equal-pairs) |
+## Math
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0002-add-two-numbers) |
 <!---LeetCode Topics End-->
