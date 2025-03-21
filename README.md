@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2308-divide-array-into-equal-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2478-longest-nice-subarray) |
 | [2665-minimum-time-to-repair-cars](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2665-minimum-time-to-repair-cars) |
@@ -74,6 +75,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0160-intersection-of-two-linked-lists) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2308-divide-array-into-equal-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2308-divide-array-into-equal-pairs) |
 ## Bucket Sort
 |  |
@@ -133,5 +135,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Graph
 |  |
 | ------- |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [3348-minimum-cost-walk-in-weighted-graph](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3348-minimum-cost-walk-in-weighted-graph) |
+## String
+|  |
+| ------- |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
+## Topological Sort
+|  |
+| ------- |
+| [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 <!---LeetCode Topics End-->
