@@ -74,6 +74,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0138-copy-list-with-random-pointer](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0160-intersection-of-two-linked-lists) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
@@ -101,6 +102,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0092-reverse-linked-list-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0092-reverse-linked-list-ii) |
 | [0138-copy-list-with-random-pointer](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0138-copy-list-with-random-pointer) |
 | [0141-linked-list-cycle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0141-linked-list-cycle) |
+| [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0160-intersection-of-two-linked-lists) |
 | [0206-reverse-linked-list](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0206-reverse-linked-list) |
 ## Recursion
@@ -166,4 +168,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [2793-count-the-number-of-complete-components](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2793-count-the-number-of-complete-components) |
+## Design
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
