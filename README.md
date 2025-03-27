@@ -11,6 +11,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0053-maximum-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0056-merge-intervals) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0198-house-robber](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0198-house-robber) |
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
@@ -47,6 +48,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0053-maximum-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0053-maximum-subarray) |
 | [0070-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0070-climbing-stairs) |
+| [0198-house-robber](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0198-house-robber) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2090-number-of-ways-to-arrive-at-destination) |
