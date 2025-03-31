@@ -24,7 +24,7 @@ class Solution {
     */
 
     //Approach 2 - Memoization - TC : O(mxn) , total of m × n unique states (each cell in the grid is a state) & each state is being computed once 
-    int[][] dp;
+    /*int[][] dp;
     public int uniquePaths(int m, int n) {
        dp = new int[m][n]; 
 
@@ -55,5 +55,42 @@ class Solution {
 
         dp[row][col] = bottom + right;
         return dp[row][col];
+    }*/
+
+    //Approach 3 : Tabulation 
+    int[][] dp;
+    public int uniquePaths(int m, int n) {
+       dp = new int[m][n]; 
+
+       for(int[] row : dp){
+         Arrays.fill(row, -1);
+       }
+       
+       for(int i=0; i<m; i++){
+        for(int j=0; j<n; j++){
+
+            //if we have reached last cell
+            if(i == 0 && j == 0){
+                dp[i][j] = 1;
+                continue;
+            }
+
+            //either we move down or we move right 
+            int up = 0;
+            int left = 0;
+
+            if(j > 0){
+                up = dp[i][j-1];
+            }
+            
+            if(i > 0){
+                left = dp[i-1][j];
+            }
+            
+            dp[i][j] = up + left;
+        }
+       }
+
+       return dp[m-1][n-1]; //return total number of ways to reach last cell
     }
 }
