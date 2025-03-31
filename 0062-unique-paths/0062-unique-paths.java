@@ -58,7 +58,7 @@ class Solution {
     }*/
 
     //Approach 3 : Tabulation 
-    int[][] dp;
+    /*int[][] dp;
     public int uniquePaths(int m, int n) {
        dp = new int[m][n]; 
 
@@ -75,7 +75,7 @@ class Solution {
                 continue;
             }
 
-            //either we move down or we move right 
+            //either we move up or we move left
             int up = 0;
             int left = 0;
 
@@ -91,6 +91,41 @@ class Solution {
         }
        }
 
-       return dp[m-1][n-1]; //return total number of ways to reach last cell
-    }
+       return dp[m-1][n-1]; //return total number of ways to reach last cell */
+
+       //Approach 4: space optimisation 
+       public int uniquePaths(int m, int n) {
+
+            //we at any time need upper row value and prev cell values as we can go either up or left
+            //so for upper row we will maintain prev[] and for curr row left values we put those in temp[]
+
+            int[] prev = new int[n];
+
+            for(int i=0; i<m; i++){
+                //for every curr row store values in temp arr
+                int[] temp = new int[n];
+                for(int j=0; j<n; j++){
+                    
+                    if(i == 0 && j == 0){
+                        temp[j] = 1;
+                        continue;
+                    }
+
+                    int up = 0;
+                    int left = 0;
+
+                    if(i > 0){
+                        up = prev[j]; //prev row data 
+                    }
+
+                    if(j > 0){
+                        left = temp[j-1]; //current row data
+                    }
+
+                    temp[j] = up + left;
+                }
+                prev = temp;
+            }
+            return prev[n-1]; 
+       }
 }
