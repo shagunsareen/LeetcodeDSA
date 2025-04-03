@@ -1,4 +1,6 @@
 class Solution {
+    /*  
+    Approach 1 : Memoization
     int[][] dp;
     public int minPathSum(int[][] grid) {
         int n = grid.length;
@@ -39,5 +41,38 @@ class Solution {
          dp[row][col] = Math.min(up, left);
 
          return dp[row][col];    
+    }
+    */
+
+    //Approach 2 : Tabulation
+    int[][] dp;
+    public int minPathSum(int[][] grid) {
+        int n = grid.length;
+        int m = grid[0].length;
+
+        dp = new int[n][m];
+
+        //now we need to calculate entire dp array from bottom to top meaning from top left to bottom right cell
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+
+                if(i == 0 && j==0){
+                    dp[i][j] = grid[i][j];
+                }else{
+                    int up = Integer.MAX_VALUE;;
+                    int left = Integer.MAX_VALUE;;
+
+                    if( i > 0){
+                        up = grid[i][j] + dp[i-1][j];
+                    }
+
+                    if(j > 0){
+                        left = grid[i][j] + dp[i][j-1];
+                    }
+                     dp[i][j] = Math.min(up, left);
+                }               
+            }
+        }
+        return dp[n-1][m-1];
     }
 }
