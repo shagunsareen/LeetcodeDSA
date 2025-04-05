@@ -36,7 +36,7 @@ class Solution {
     }*/
 
     //Approach 2 : Tabulation - Bottom up approach
-    int[][] dp;
+    /*int[][] dp;
 
     public int minimumTotal(List<List<Integer>> triangle) {
         int n = triangle.size();
@@ -61,5 +61,32 @@ class Solution {
         }
 
         return dp[0][0];
+    }*/
+
+    //Approach 3 : space optimisation
+    int[] front;
+    int[] curr;
+    public int minimumTotal(List<List<Integer>> triangle) {
+        int n = triangle.size();
+        front = new int[n];
+
+        for(int col = 0; col <n; col++){
+            front[col] = triangle.get(n-1).get(col);
+        }
+
+        for(int i=n-2; i>=0; i--){
+            curr = new int[n];
+
+            for(int j=i; j>=0; j--){
+                
+                int down = triangle.get(i).get(j) + front[j];
+                int diag = triangle.get(i).get(j) + front[j+1];
+
+                curr[j] = Math.min(down, diag);
+            }
+            front = curr;
+        }
+
+        return front[0];
     }
 }
