@@ -55,7 +55,7 @@ class Solution {
         dp[row][col] = Math.min(upSum, Math.min(leftDiagSum, rightDiagSum));
         return dp[row][col];
     }
-    */
+    
 
     //Approach 2 : Tabulation
     int[][] dp;
@@ -99,6 +99,56 @@ class Solution {
         //iterate over last row and get min sum
         for(int col = 0; col < cols; col++){
             minSum = Math.min(minSum, dp[rows-1][col]);
+        }
+
+        return minSum;
+    }*/
+
+    //Approach 3 : Space Optimisation
+    int[] prev;
+    public int minFallingPathSum(int[][] matrix) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        prev = new int[cols];
+        
+        //fill the first row of dp since we go from 0 to last row 
+        for(int col = 0; col < cols; col++){
+            prev[col] = matrix[0][col];
+        }
+
+        //fill all other dp cells
+        for(int row = 1; row < rows; row++){
+            int[] curr = new int[cols];
+            for(int col = 0; col < cols; col++){
+                
+                int upSum = Integer.MAX_VALUE;
+                int leftDiagSum = Integer.MAX_VALUE;
+                int rightDiagSum = Integer.MAX_VALUE;
+
+                if(row > 0 ){
+                    upSum = matrix[row][col] + prev[col];
+                }
+                if(row > 0 && col > 0){
+                    leftDiagSum = matrix[row][col] + prev[col-1];
+                }else{
+                    leftDiagSum = Integer.MAX_VALUE;
+                }
+                if(row > 0 && col < cols - 1){
+                    rightDiagSum = matrix[row][col] + prev[col+1];
+                }else{
+                    rightDiagSum = Integer.MAX_VALUE;
+                }
+                
+                curr[col] = Math.min(upSum, Math.min(leftDiagSum, rightDiagSum));
+            }
+
+            prev = curr;
+        }
+
+        int minSum = Integer.MAX_VALUE;
+        //iterate over last row and get min sum
+        for(int col = 0; col < cols; col++){
+            minSum = Math.min(minSum, prev[col]);
         }
 
         return minSum;
