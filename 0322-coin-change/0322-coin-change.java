@@ -47,7 +47,7 @@ class Solution {
     }*/
 
     //Tabulation 
-    int[][] dp;
+    /*int[][] dp;
     public int coinChange(int[] coins, int amount) {
         int n = coins.length;
         dp = new int[n][amount+1];
@@ -81,6 +81,46 @@ class Solution {
         }
         
         return dp[n-1][amount] == Integer.MAX_VALUE ? -1 : dp[n-1][amount];
+    }*/
+
+    //Space optimization
+    int[] prev;
+    public int coinChange(int[] coins, int amount) {
+        int n = coins.length;
+        prev = new int[amount + 1]; 
+
+        for(int t=0; t<=amount; t++){
+            if(t % coins[0] == 0){
+                prev[t] = t / coins[0];
+            }else{
+                prev[t] = Integer.MAX_VALUE;
+            }
+        }
+
+        for(int index = 1; index < n; index++){
+            
+            int[] curr = new int[amount + 1];
+
+            for(int target=0; target <= amount; target++){
+                
+                int taken = Integer.MAX_VALUE;
+
+                if(coins[index] <= target){
+
+                    int res = curr[target - coins[index]];
+                    
+                    if(res != Integer.MAX_VALUE){
+                        taken = 1 + res;
+                    }       
+                }
+
+                int notTaken = prev[target];
+
+                curr[target] = Math.min(taken, notTaken);
+            }
+            prev = curr;
+        }      
+        return prev[amount] == Integer.MAX_VALUE ? -1 : prev[amount];
     }
 
 
