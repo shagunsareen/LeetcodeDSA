@@ -1,7 +1,7 @@
 class Solution {
 
     //Memoization
-    int[][] dp;
+    /*int[][] dp;
     public int coinChange(int[] coins, int amount) {
         int n = coins.length;
         dp = new int[n][amount+1];
@@ -44,5 +44,44 @@ class Solution {
 
         dp[index][amount] = Math.min(taken, notTaken);
         return dp[index][amount];
+    }*/
+
+    //Tabulation 
+    int[][] dp;
+    public int coinChange(int[] coins, int amount) {
+        int n = coins.length;
+        dp = new int[n][amount+1];
+
+        //first row 
+        for(int t=0; t<=amount; t++){
+            if(t % coins[0] == 0){
+                dp[0][t] = t / coins[0];
+            }else{
+                dp[0][t] = Integer.MAX_VALUE;
+            }
+        }
+        
+        //fill rest of the table
+        for(int index = 1; index < n; index++){
+            for(int target=0; target <= amount; target++){
+                
+                int taken = Integer.MAX_VALUE;
+
+                if(coins[index] <= target){
+                    int res = dp[index][target - coins[index]];
+                    if(res != Integer.MAX_VALUE){
+                        taken = 1 + res;
+                    }       
+                }
+
+                int notTaken = dp[index-1][target];
+
+                dp[index][target] = Math.min(taken, notTaken);
+            }
+        }
+        
+        return dp[n-1][amount] == Integer.MAX_VALUE ? -1 : dp[n-1][amount];
     }
+
+
 }
