@@ -17,6 +17,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0198-house-robber](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
+| [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0416-partition-equal-subset-sum) |
@@ -71,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0120-triangle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0120-triangle) |
 | [0198-house-robber](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0198-house-robber) |
 | [0213-house-robber-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0213-house-robber-ii) |
+| [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
 | [0416-partition-equal-subset-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0416-partition-equal-subset-sum) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
@@ -240,6 +242,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Breadth-First Search
 |  |
 | ------- |
+| [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2588-maximum-number-of-points-from-grid-queries) |
 | [2793-count-the-number-of-complete-components](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2793-count-the-number-of-complete-components) |
