@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2262-solving-questions-with-brainpower](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2262-solving-questions-with-brainpower) |
+| [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
 | [2308-divide-array-into-equal-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2308-divide-array-into-equal-pairs) |
 | [2478-longest-nice-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2478-longest-nice-subarray) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2588-maximum-number-of-points-from-grid-queries) |
@@ -53,6 +54,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
 | [2665-minimum-time-to-repair-cars](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2665-minimum-time-to-repair-cars) |
 | [2690-house-robber-iv](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2690-house-robber-iv) |
 ## Divide and Conquer
@@ -63,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
+| [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -318,4 +321,20 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1993-sum-of-all-subset-xor-totals](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2998-count-symmetric-integers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2998-count-symmetric-integers) |
 | [3548-find-the-count-of-good-integers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3548-find-the-count-of-good-integers) |
+## Binary Indexed Tree
+|  |
+| ------- |
+| [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
+## Segment Tree
+|  |
+| ------- |
+| [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
+## Merge Sort
+|  |
+| ------- |
+| [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
+## Ordered Set
+|  |
+| ------- |
+| [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
 <!---LeetCode Topics End-->
