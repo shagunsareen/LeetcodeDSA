@@ -238,6 +238,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## String
 |  |
 | ------- |
+| [0038-count-and-say](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0038-count-and-say) |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [3243-count-the-number-of-powerful-integers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3243-count-the-number-of-powerful-integers) |
