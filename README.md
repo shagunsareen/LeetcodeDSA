@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0416-partition-equal-subset-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0416-partition-equal-subset-sum) |
 | [0494-target-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0518-coin-change-ii) |
+| [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -135,6 +136,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0160-intersection-of-two-linked-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0160-intersection-of-two-linked-lists) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
+| [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2220-find-all-possible-recipes-from-given-supplies](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2220-find-all-possible-recipes-from-given-supplies) |
 | [2308-divide-array-into-equal-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2308-divide-array-into-equal-pairs) |
@@ -204,6 +206,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0062-unique-paths](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0070-climbing-stairs) |
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
+| [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2050-count-good-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2050-count-good-numbers) |
@@ -292,6 +295,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
+| [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [2681-put-marbles-in-bags](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2681-put-marbles-in-bags) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
 ## Monotonic Stack
