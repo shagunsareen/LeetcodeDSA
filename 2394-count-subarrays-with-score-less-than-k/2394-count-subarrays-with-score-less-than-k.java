@@ -6,7 +6,7 @@ class Solution {
         int left = 0;
         int n = nums.length;
 
-        while(left < n){  //fix left 
+        /*while(left < n){  //fix left 
 
             //move j till invalid index ad count valid subarrays i.e. right - left 
             while(right < n && ((prefixSum + nums[right]) * (right - left + 1) < k)){
@@ -22,8 +22,22 @@ class Solution {
                  prefixSum -= nums[left];  //move left forward 
             }
             left++;
-        }
+        }*/
 
+
+        //Approach 2 - move right and restart left on invalid right
+        while(right < n){          
+            prefixSum += nums[right];
+
+            while(prefixSum * (right - left + 1) >= k){ //if sum exceeds k move left 
+                prefixSum -= nums[left];
+                left++;
+            }
+
+            res += (right - left + 1);
+
+            right++;
+        }
         return res;
     }
 }
