@@ -30,6 +30,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1049-minimum-domino-rotations-for-equal-row) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1421-find-numbers-with-even-number-of-digits](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1421-find-numbers-with-even-number-of-digits) |
 | [1656-count-good-triplets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1656-count-good-triplets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1993-sum-of-all-subset-xor-totals) |
@@ -70,6 +71,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1335-maximum-candies-allocated-to-k-children) |
+| [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2394-count-subarrays-with-score-less-than-k) |
@@ -106,6 +108,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
+| [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2262-solving-questions-with-brainpower](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2262-solving-questions-with-brainpower) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2415-count-the-number-of-ideal-arrays) |
@@ -130,6 +133,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
+| [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2588-maximum-number-of-points-from-grid-queries) |
