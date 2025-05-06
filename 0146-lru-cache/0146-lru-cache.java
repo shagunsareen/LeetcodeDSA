@@ -1,72 +1,69 @@
 class LRUCache {
 
     HashMap<Integer, Node> map;
-    int limit;
-
-    Node head; // required when we need to delete node from first if map is full 
+    int capacity;
+    Node head; 
     Node tail;
 
-    class Node{
-        int key;
-        int data;
-        Node next;
-        Node prev; //since its double linked list we need prev node also
-
-        Node(int key, int val){
-            this.key = key;
-            this.data = val;
-        }
-    }
-
-
     public LRUCache(int capacity) {
-        head = new Node(-1,0);
-        tail = new Node(-1,0);
+        map = new HashMap<>();
+        this.capacity = capacity;
+
+        head = new Node(-1, 0);
+        tail = new Node(-1, 0);
 
         head.next = tail;
         tail.prev = head;
-       
-        map = new HashMap<>();
-        this.limit = capacity;
     }
-    
+
     public int get(int key) {
         if(map.containsKey(key)){
-            //delete mode and insert at the end
             Node currNode = map.get(key);
+            //since this node is accessed now its position should be changed 
             deleteNode(currNode);
             insertNodeAtLast(currNode);
-            return currNode.data;
+            return currNode.value;
         }
         return -1;
     }
-    
+
     public void put(int key, int value) {
+        
         if(map.containsKey(key)){
-            deleteNode(map.get(key));
-        }else{
-            //check if the map size is full , if it is full then delete first node
-            if(map.size() == limit){
-                deleteNode(head.next);
-            }
+            deleteNode(map.get(key)); //existing node deleted
+        }else if(map.size() == capacity){
+            deleteNode(head.next); //first node deleted to make space 
         }
 
-        Node node = new Node(key, value);
-        insertNodeAtLast(node);
+        Node insertNode = new Node(key, value);
+        insertNodeAtLast(insertNode);
     }
 
-    private void deleteNode(Node node){ //we always delete node from the front 
-        map.remove(node.key);
-        node.prev.next = node.next;
-        node.next.prev = node.prev;
+    public void deleteNode(Node currNode){
+        map.remove(currNode.key);
+        currNode.prev.next = currNode.next;
+        currNode.next.prev = currNode.prev;
     }
 
-    private void insertNodeAtLast(Node node){ //we always insert node at the end of doubly linked list
-        map.put(node.key, node);
-        tail.prev.next = node;
-        node.prev = tail.prev;
-        node.next = tail;
-        tail.prev = node;
+    public void insertNodeAtLast(Node currNode){
+        map.put(currNode.key, currNode);
+        tail.prev.next = currNode;
+        currNode.prev = tail.prev;
+        currNode.next = tail;
+        tail.prev = currNode;
+    }  
+
+    //Cache is combo of hashmap and linkedlist. map is used to see which nodes are in linkedinlist in o(1)
+    class Node{
+        int key;
+        int value;
+        Node prev;
+        Node next;
+
+        Node(int key, int val){
+            this.key = key;
+            this.value = val;
+        }
     }
 }
 
