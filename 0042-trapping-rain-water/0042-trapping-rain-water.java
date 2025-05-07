@@ -1,36 +1,9 @@
 class Solution {
     public int trap(int[] height) {
-        
-        //Approach 1 : SC :O(2n)
-        
-        /*int n = height.length;
-        int[] leftMax = new int[n];
-        leftMax[0] = height[0];
-
-        int[] rightMax = new int[n];
-        rightMax[n-1] = height[n-1];
-
-        // iterate to get left max
-        for(int i=1; i<n; i++){
-            leftMax[i] = Math.max(height[i], leftMax[i-1]);
-        }
-
-        //iterate to get right max
-        for(int i=n-2; i>=0; i--){
-            rightMax[i] = Math.max(height[i], rightMax[i+1]);
-        }
-
-        int totalWaterTrapped = 0;
-
-        //now calculate the water trapped
-        for(int i=1; i<n-1; i++){
-            totalWaterTrapped += Math.max((Math.min(leftMax[i-1], rightMax[i+1]) - height[i]),0);
-            System.out.println("LM : "+leftMax[i]+ ", RM : "+rightMax[i]+", Ht : "+height[i]+",WT: "+totalWaterTrapped);
-        }
-
-        return totalWaterTrapped;*/
-
+    
         int n = height.length;
+        /* Approach 1
+        
         int[] leftMax = new int[n];
         leftMax[0] = height[0];
         int[] rightMax = new int[n];
@@ -49,22 +22,34 @@ class Solution {
             totalWater += Math.max(Math.min(leftMax[i],rightMax[i]) - height[i], 0);
         }
 
-        return totalWater;
+        return totalWater; */
 
-        //Approach 2 : without arrays
-        /*int n = height.length;
-        int lmax =height[0];
-        int rmax =height[n-1];
+        //Approach 2 
+        int left = 0;
+        int right = n-1;
+        int leftMax = 0;
+        int rightMax = 0;
         int totalWater = 0;
-        int l =0;
-        int r =n-1;
 
-        while(l<r){
-            lmax = Math.max(lmax, height[l]);
-            rmax = Math.max(rmax, height[r]);
-            totalWater+=(lmax<rmax) ? lmax-height[l++] : rmax-height[r--];
+        //take side which has lower height
+        while(left < right){
+
+            if(height[left] < height[right]){ 
+                if(height[left] >= leftMax){
+                    leftMax = height[left]; //update left max since curr h is greater than lmax
+                }else{
+                    totalWater += leftMax - height[left];
+                }
+                 left++;
+            }else {
+                if(height[right] >= rightMax){
+                    rightMax = height[right]; //update left max since curr h is greater than lmax
+                }else{
+                    totalWater += rightMax - height[right];
+                }
+                right--;
+            }   
         }
-
-        return totalWater;*/
+        return totalWater;
     }
 }
