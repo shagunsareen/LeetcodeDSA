@@ -15,38 +15,37 @@ class Node {
 
 class Solution {
     public Node copyRandomList(Node head) {
-        //Step1 : create copy of each node in place to original list
         Node curr = head;
 
+        //1. create all new nodes , attach after original nodes
         while(curr != null){
             Node copy = new Node(curr.val);
             copy.next = curr.next;
-            // node.random = originalPtr.random; // this can't be done since random is another node in the same list so we first need to create all nodes in the new lis t
-
-            curr.next = copy; //assign copy node just next to it's original node
-            curr = copy.next;
+            curr.next = copy;
+            curr = copy.next; //move to next original node
         }
 
-        //Step2 : Assign random pointer to the copied nodes
+        //2. add random ptrs now we have all nodes
         curr = head;
         while(curr != null){
             if(curr.random != null){
-                curr.next.random = curr.random.next; //since curr's random's next node would eb the copied node of original random node and we need to point to copied nodes not the original ones
-            }
+                curr.next.random = curr.random.next; //since copied nodes are next ones to original ones
+            } 
             curr = curr.next.next;
         }
 
-        //Step3 : extract copied list from original list 
+        //3. extract copied list from original 
         curr = head;
-        Node dummy = new Node(0);
-        Node copyCurr = dummy;
+        Node dummyHead = new Node(0);
+        Node copyCurr = dummyHead;
 
         while(curr != null){
             copyCurr.next = curr.next;
-            curr.next = curr.next.next; //restoring the original list (removing copied nodes)
+            curr.next = curr.next.next;
             curr = curr.next;
             copyCurr = copyCurr.next;
         }
-        return dummy.next;
+
+        return dummyHead.next;
     }
 }
