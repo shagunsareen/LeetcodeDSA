@@ -13,6 +13,8 @@ class Solution {
 
         //Approach 1 : TC - NlogN, SC - N
         //put all nodes in one list and sort it 
+        
+        /*
         ArrayList<Integer> nodes = new ArrayList<>();
         for(ListNode l : lists){
             while(l != null){
@@ -29,6 +31,32 @@ class Solution {
         for(int x : nodes){
             curr.next = new ListNode(x);
             curr = curr.next;
+        }
+
+        return dummy.next;
+        */
+
+        //Approach 2 - merge using priority queue
+
+        //insert head of all lists to queue and pick smallest one always
+        PriorityQueue<ListNode> queue = new PriorityQueue<>((b,c) -> b.val - c.val); //increasing order 
+        for(ListNode node : lists){
+            if(node != null){
+                queue.add(node);
+            }
+        }
+
+        ListNode dummy = new ListNode(0);
+        ListNode pointer = dummy;
+
+        while(!queue.isEmpty()){
+            pointer.next = queue.poll(); //head
+            pointer = pointer.next; //next node should be here 
+
+            //we have picked 1 ele out of k now we have to insert next ele also of the list
+            if(pointer.next != null){
+                queue.add(pointer.next);
+            }
         }
 
         return dummy.next;
