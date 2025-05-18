@@ -123,6 +123,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
+| [2061-painting-a-grid-with-three-different-colors](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2061-painting-a-grid-with-three-different-colors) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2090-number-of-ways-to-arrive-at-destination) |
 | [2262-solving-questions-with-brainpower](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2262-solving-questions-with-brainpower) |
 | [2415-count-the-number-of-ideal-arrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2415-count-the-number-of-ideal-arrays) |
