@@ -23,6 +23,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0200-number-of-islands) |
 | [0213-house-robber-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0213-house-robber-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
+| [0238-product-of-array-except-self](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0238-product-of-array-except-self) |
 | [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
@@ -321,6 +322,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Prefix Sum
 |  |
 | ------- |
+| [0238-product-of-array-except-self](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0238-product-of-array-except-self) |
 | [2249-count-the-hidden-sequences](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2249-count-the-hidden-sequences) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2394-count-subarrays-with-score-less-than-k) |
 | [2915-count-of-interesting-subarrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2915-count-of-interesting-subarrays) |
