@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0494-target-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0518-coin-change-ii) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
+| [0945-snakes-and-ladders](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0945-snakes-and-ladders) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1036-rotting-oranges](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1036-rotting-oranges) |
@@ -400,6 +401,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0200-number-of-islands](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0200-number-of-islands) |
 | [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
+| [0945-snakes-and-ladders](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0945-snakes-and-ladders) |
 | [1036-rotting-oranges](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1036-rotting-oranges) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2588-maximum-number-of-points-from-grid-queries) |
@@ -427,6 +429,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0064-minimum-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0073-set-matrix-zeroes) |
 | [0200-number-of-islands](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0200-number-of-islands) |
+| [0945-snakes-and-ladders](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0945-snakes-and-ladders) |
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1036-rotting-oranges](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1036-rotting-oranges) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
