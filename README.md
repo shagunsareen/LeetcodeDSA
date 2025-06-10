@@ -235,6 +235,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3656-minimum-number-of-operations-to-make-elements-in-array-distinct](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3656-minimum-number-of-operations-to-make-elements-in-array-distinct) |
+| [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 ## Bucket Sort
 |  |
 | ------- |
@@ -250,6 +251,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [2308-divide-array-into-equal-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2308-divide-array-into-equal-pairs) |
 | [3629-total-characters-in-string-after-transformations-i](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3629-total-characters-in-string-after-transformations-i) |
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3630-total-characters-in-string-after-transformations-ii) |
+| [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 ## Linked List
 |  |
 | ------- |
@@ -388,6 +390,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [3630-total-characters-in-string-after-transformations-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3630-total-characters-in-string-after-transformations-ii) |
 | [3637-count-number-of-balanced-permutations](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3637-count-number-of-balanced-permutations) |
 | [3683-find-the-lexicographically-largest-string-from-the-box-i](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3683-find-the-lexicographically-largest-string-from-the-box-i) |
+| [3753-maximum-difference-between-even-and-odd-frequency-i](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3753-maximum-difference-between-even-and-odd-frequency-i) |
 ## Topological Sort
 |  |
 | ------- |
