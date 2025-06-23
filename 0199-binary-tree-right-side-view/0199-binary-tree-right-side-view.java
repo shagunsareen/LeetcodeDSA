@@ -14,50 +14,42 @@
  * }
  */
 class Solution {
-    ArrayList<Integer> res;
     public List<Integer> rightSideView(TreeNode root) {
-        res = new ArrayList<>();
-        
         if(root == null){
-            return res;
+            return new ArrayList<>();
         }
-        
-        TreeNode curr = root;
+
+        //level order traversal 
         TreeNode dummy = new TreeNode(-1);
-        
         Queue<TreeNode> queue = new LinkedList<>();
-        queue.add(curr);
+        queue.add(root);
         queue.add(dummy);
-        res.add(curr.val); //since root node will be in the ans anyway
-        
+
+        List<Integer> res = new ArrayList<>();
+        res.add(root.val);
+
         while(!queue.isEmpty()){
+
+            TreeNode curr = queue.poll();
             
-            curr = queue.poll();
-            //System.out.println(curr.val);
-            
-            if(curr!=dummy){
-                //System.out.println("Not inside dummy");
-                
-                if(curr.right != null){  //add the right node first 
-                    queue.add(curr.right);
-                }
-                
-                if(curr.left != null){
-                    queue.add(curr.left);
-                }
-            }else{
-                //System.out.println("inside dummy");
-                
+            if(curr == dummy){ 
                 if(!queue.isEmpty()){
                     queue.add(dummy);
-                     //res.add(queue.peek().val); 
                 }
-                
+
                 if(queue.peek() != null){
-                   res.add(queue.peek().val); //this is right node of the level since we added right node first to the queue 
-                } 
-            }
+                    res.add(queue.peek().val);
+                }
+            }else{
+                if(curr.right != null){
+                    queue.add(curr.right);
+                }
+
+                if(curr.left != null){
+                    queue.add(curr.left);
+                }     
+            }   
         }
-        return res;    
+        return res;
     }
 }
