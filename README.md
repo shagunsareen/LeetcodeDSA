@@ -47,6 +47,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1510-find-lucky-integer-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1510-find-lucky-integer-in-an-array) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [1656-count-good-triplets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1656-count-good-triplets) |
+| [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1995-finding-pairs-with-a-certain-sum) |
 | [2048-build-array-from-permutation](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2048-build-array-from-permutation) |
@@ -108,6 +109,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1335-maximum-candies-allocated-to-k-children) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2150-kth-smallest-product-of-two-sorted-arrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2150-kth-smallest-product-of-two-sorted-arrays) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
@@ -151,6 +153,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
+| [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2061-painting-a-grid-with-three-different-colors) |
 | [2090-number-of-ways-to-arrive-at-destination](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2090-number-of-ways-to-arrive-at-destination) |
@@ -191,6 +194,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
+| [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [2160-minimum-operations-to-make-a-uni-value-grid](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2160-minimum-operations-to-make-a-uni-value-grid) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2215-finding-3-digit-even-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2215-finding-3-digit-even-numbers) |
