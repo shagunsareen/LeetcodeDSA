@@ -35,6 +35,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0934-bitwise-ors-of-subarrays) |
+| [0940-fruit-into-baskets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0940-fruit-into-baskets) |
 | [0945-snakes-and-ladders](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0945-snakes-and-ladders) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
@@ -269,6 +270,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
+| [0940-fruit-into-baskets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0940-fruit-into-baskets) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1500-count-largest-group](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1500-count-largest-group) |
@@ -418,6 +420,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
+| [0940-fruit-into-baskets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0940-fruit-into-baskets) |
 | [1813-maximum-erasure-value](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1813-maximum-erasure-value) |
 | [2229-maximum-fruits-harvested-after-at-most-k-steps](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2229-maximum-fruits-harvested-after-at-most-k-steps) |
 | [2394-count-subarrays-with-score-less-than-k](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2394-count-subarrays-with-score-less-than-k) |
