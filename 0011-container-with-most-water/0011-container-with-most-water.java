@@ -1,26 +1,24 @@
 class Solution {
     public int maxArea(int[] height) {
-        //O(n2) : if i make take rectange points as i and i+1 for every index which is not efficient
-        
-        //O(n) : Two pointer approach 
-        int size = height.length;
-        
-        int left = 0;
-        int right = size-1;
-        int maxArea = 0;
-        int area = 0;
-        
-        while(left < right){
-            area = Math.min(height[left], height[right])*(right-left);
-            maxArea = Math.max(maxArea, area);
 
-            //check which height is more and increase pointer accorindly
-            if(height[left] <= height[right]){
+        int n = height.length;
+        int left = 0;
+        int right = n - 1;
+        int maxArea = 0;
+
+        while(left < right){
+            int width = right - left;
+            int length = Math.min(height[left], height[right]); 
+            int currArea = width * length; 
+            maxArea = Math.max(currArea, maxArea);   
+
+            if(height[left] <= height[right]){ //we move shorter height pointer so that we can get better height in future 
                 left++;
             }else{
                 right--;
             }
-        }  
+        }
+        
         return maxArea;
     }
 }
