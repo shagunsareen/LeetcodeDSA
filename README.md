@@ -158,6 +158,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Dynamic Programming
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0005-longest-palindromic-substring) |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
 | [0053-maximum-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0062-unique-paths) |
@@ -364,6 +365,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Two Pointers
 |  |
 | ------- |
+| [0005-longest-palindromic-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0011-container-with-most-water) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
@@ -483,6 +485,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0005-longest-palindromic-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0005-longest-palindromic-substring) |
 | [0020-valid-parentheses](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0020-valid-parentheses) |
 | [0038-count-and-say](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0038-count-and-say) |
 | [0049-group-anagrams](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0049-group-anagrams) |
