@@ -1,4 +1,6 @@
 class Solution {
+    /*
+     // Approach 1 - Recursion with Memoization
     private int[] memo;
     public int rob(int[] nums) {
         memo = new int[nums.length + 1];
@@ -23,5 +25,26 @@ class Solution {
 
         memo[index] = amount;
         return memo[index];
-    }
+
+        }
+        */
+
+        //Approach 2 - Tabulation, iteration - we go from right to left as we dont know which house on the right has more value 
+        public int rob(int[] nums) {
+            int n = nums.length;
+
+            int[] dp = new int[n+1];
+
+            dp[n-1] = nums[n-1]; //choosing this house and nothing on right
+            dp[n] = 0; //nothing on right
+
+            for(int i=n-2; i>=0; i--){
+                int pick = dp[i+2] + nums[i];
+                int dontPick = dp[i+1];
+
+                dp[i] = Math.max(pick, dontPick);
+            }
+
+            return dp[0];
+        }
 }
