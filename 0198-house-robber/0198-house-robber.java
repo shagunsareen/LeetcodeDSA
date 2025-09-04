@@ -27,7 +27,7 @@ class Solution {
         return memo[index];
 
         }
-        */
+        
 
         //Approach 2 - Tabulation, iteration - we go from right to left as we dont know which house on the right has more value 
         public int rob(int[] nums) {
@@ -46,5 +46,25 @@ class Solution {
             }
 
             return dp[0];
+        } */
+
+
+        //Approach 3 : Space optimised 
+        public int rob(int[] nums) {
+            int n = nums.length;
+
+            int nextFirst = nums[n-1]; //choosing this house and nothing on right
+            int nextSecond = 0; //nothing on right
+
+            for(int i=n-2; i>=0; i--){
+                int pick = nextSecond + nums[i];
+                int dontPick = nextFirst;
+
+                int current = Math.max(pick, dontPick);
+                nextSecond = nextFirst;
+                nextFirst = current;  
+            }
+
+            return nextFirst;
         }
 }
