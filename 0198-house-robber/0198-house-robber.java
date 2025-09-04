@@ -1,28 +1,27 @@
 class Solution {
-    int[] dp;
-
+    private int[] memo;
     public int rob(int[] nums) {
-        int n = nums.length;
-        dp = new int[n];
-        Arrays.fill(dp, -1);
+        memo = new int[nums.length + 1];
+        Arrays.fill(memo, -1);
 
-        return getMaxRobAmount(n-1, nums);
+        return robFrom(0, nums);
     }
 
-    private int getMaxRobAmount(int index, int[] nums){
-        if(index == 0) return nums[index];
+    //max amount if we rob from this index to end houses
+    private int robFrom(int index, int[] nums){
+        if(index >= nums.length){
+            return 0;
+        }
 
-        if(index < 0) return 0;
+        if(memo[index] > -1)
+        {
+            return memo[index];
+        }
 
-        if(dp[index] != -1) return dp[index];
+        int amount = Math.max(robFrom(index + 1, nums) , 
+                              robFrom(index + 2, nums) + nums[index]);
 
-        //either we pick an element or we don't
-        int pick = nums[index]  + getMaxRobAmount(index - 2, nums);
-
-        int notPick = getMaxRobAmount(index - 1, nums);
-
-        dp[index] = Math.max(pick, notPick);
-
-        return dp[index];
+        memo[index] = amount;
+        return memo[index];
     }
 }
