@@ -1,7 +1,7 @@
 class Solution {
 
     //Approach 1 - Tabulation , Iterative, Bottom to Up
-    /*public int minCostClimbingStairs(int[] cost) {
+  /*  public int minCostClimbingStairs(int[] cost) {
         int n = cost.length;
 
         int minCost[] = new int[n + 1]; 
@@ -15,7 +15,7 @@ class Solution {
         }
 
         return minCost[minCost.length -1];
-    }*/
+    }
 
     //Approach 2 - Top Down , Recursive, Memoization
     Map<Integer, Integer> map = new HashMap<>();
@@ -39,5 +39,21 @@ class Solution {
         map.put(step, value);
 
         return value;
+    } */
+
+    //Approach 3 - No extra space 
+    public int minCostClimbingStairs(int[] cost) {
+        int n = cost.length;
+
+        int minCostOne = 0;
+        int minCostTwo = 0;
+
+        for(int i=2; i < cost.length + 1; i++){
+            int temp = minCostOne;
+            minCostOne = Math.min(minCostOne + cost[i-1], minCostTwo + cost[i-2]); 
+            minCostTwo = temp;
+        }
+
+        return minCostOne;
     }
 }
