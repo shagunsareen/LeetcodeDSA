@@ -1,5 +1,7 @@
 class Solution {
-    Map<Integer, Integer> memo = new HashMap<>();
+
+    //Recursion with memoization
+    /*Map<Integer, Integer> memo = new HashMap<>();
     
     public int numDecodings(String s) {
         return decode(0, s);
@@ -32,5 +34,30 @@ class Solution {
         memo.put(index, ans);
 
         return ans;
+    }*/
+
+    //Iterative Approach 
+    public int numDecodings(String s) {
+        int n = s.length();
+        int[] dp = new int[n + 1];
+        dp[0] = 1; //we store ways possible to decode for substring from 0 to curr index
+
+        //ways to decode string of size 1
+        dp[1] = s.charAt(0) == '0' ? 0 : 1;
+        
+        for(int i=2; i<dp.length; i++){
+            //check for single digit decode 
+             if(s.charAt(i-1) != '0'){
+                 dp[i] = dp[i-1];
+             }   
+
+             //check if successful two digit decode is possible 
+             int twoDigit = Integer.valueOf(s.substring(i-2, i));
+             if(twoDigit >= 10 && twoDigit <= 26){
+                dp[i] += dp[i-2];
+             }
+        }  
+        return dp[s.length()];      
     }
+    
 }
