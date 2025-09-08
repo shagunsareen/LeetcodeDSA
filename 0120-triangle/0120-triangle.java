@@ -30,7 +30,7 @@ class Solution {
 
         dp[row][col] = Math.min(down, diagonal);
         return dp[row][col];
-    }*/
+    }
 
     //Tabulation
     public int minimumTotal(List<List<Integer>> triangle) {
@@ -51,6 +51,32 @@ class Solution {
             }
         }
         return dp[0][0];
+    } */
+
+    //Space optimisation
+    //Tabulation
+    public int minimumTotal(List<List<Integer>> triangle) {
+        int n = triangle.size();
+        int[] next = new int[n];
+
+        //fill dp table from below
+        for(int col = 0; col<n; col++){
+            next[col] = triangle.get(n-1).get(col);
+        }
+
+        for(int row = n-2; row >= 0; row--){
+            int[] curr = new int[n];
+
+            for(int col = row; col >= 0; col--){
+               int down = triangle.get(row).get(col) + next[col];
+               int diagonal = triangle.get(row).get(col) + next[col + 1];
+
+               curr[col] = Math.min(down, diagonal);
+            }
+
+            next = curr;
+        }
+        return next[0];
     }
 
 }
