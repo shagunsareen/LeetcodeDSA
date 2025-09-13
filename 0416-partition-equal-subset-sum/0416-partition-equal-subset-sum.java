@@ -13,19 +13,22 @@ class Solution {
         //even sum - get subsets 
         int n = nums.length;
         int halfSum = totalSum/2;
-        int[][] dp = new int[n][halfSum + 1];
+        
+        return tabulation(nums, halfSum);
+
+        /*int[][] dp = new int[n][halfSum + 1];
         
         for(int[] row: dp){
             Arrays.fill(row, -1);
         }
 
-        return memoization(n-1, nums, dp, halfSum);
+        return memoization(n-1, nums, dp, halfSum);*/
     }
 
 
-    private boolean memoization(int index, int[] nums, int[][] dp, int target){
+    /*private boolean memoization(int index, int[] nums, int[][] dp, int target){
         if(index < 0) return false;
-        
+
         if(index == 0 && nums[index] == target){//1. reach 0th index 
             return true;
         }
@@ -51,6 +54,40 @@ class Solution {
         dp[index][target] = (take || notTake) == true ? 1 : 0;
 
         return (take || notTake);
+    }*/
+
+    private boolean tabulation(int[] nums, int sum){
+        int rows = nums.length;
+        int cols = sum + 1;
+        boolean[][] dp = new boolean[rows][cols];  // store index as rows and sum as cols 
+        
+        //fill base cases
+        //1. if sum is 0 then it is achievable at every index
+        for(int row = 0; row < rows; row++){
+            dp[row][0] = true;
+        }
+
+        //2. in 0th row we consider only first element from the array so if our required target is same as that element or lesser so that we can take more elements later then we can consider it 
+        if(nums[0] <= sum){
+            dp[0][nums[0]] = true;
+        }
+
+        for(int index = 1; index < rows; index++){
+            for(int target = 1; target <= sum; target++){
+                boolean take = false;
+                
+                if(target >= nums[index] ){
+                    take = dp[index - 1][target - nums[index]];
+                }
+                
+                //not take element
+                boolean notTake = dp[index - 1][target];
+                
+                dp[index][target] = (take || notTake);
+            }
+        }
+
+        return dp[rows - 1][sum];
     }
 
 }
