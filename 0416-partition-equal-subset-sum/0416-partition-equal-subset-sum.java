@@ -1,49 +1,56 @@
 class Solution {
     public boolean canPartition(int[] nums) {
-        int n = nums.length;
         int totalSum = 0;
-        //get total sum and see what will be the required sum from both subsets
+        
+        //get sum of the array 
         for(int num : nums){
             totalSum += num;
         }
 
-        if(totalSum % 2 != 0){ //sum is odd can't divide in 2 subsets
-            return false; 
+        //odd sum - equal sum subsets not possible
+        if(totalSum % 2 != 0) return false;
+
+        //even sum - get subsets 
+        int n = nums.length;
+        int halfSum = totalSum/2;
+        int[][] dp = new int[n][halfSum + 1];
+        
+        for(int[] row: dp){
+            Arrays.fill(row, -1);
         }
 
-        return isSubsetSumK(nums, n, totalSum/2);
+        return memoization(n-1, nums, dp, halfSum);
     }
 
-    boolean[] prev; //this will store just target values
-    private boolean isSubsetSumK(int[] nums, int n, int k){
-        prev = new boolean[k+1];
 
-        // for target 0 mark it true since its possible to have subset with sum 0 by nnot taking any element
-        prev[0] = true;
-
-        if(nums[0] <= k)
-        {
-            prev[nums[0]] = true;
+    private boolean memoization(int index, int[] nums, int[][] dp, int target){
+        if(index < 0) return false;
+        
+        if(index == 0 && nums[index] == target){//1. reach 0th index 
+            return true;
         }
 
-        for(int index = 1; index < n; index++){
-            boolean[] curr = new boolean[k+1]; //store curr values
-            curr[0] = true;
-            for(int target = 0; target <= k; target++){
-
-                boolean taken = false;
-                
-                if(nums[index] <= target){
-                    taken = prev[target-nums[index]];
-                }
-
-                boolean notTaken = prev[target];
-
-                curr[target] = taken || notTaken;
-            }
-            prev = curr;
+        if(target == 0){   //2. target is reached
+            return true;
         }
 
-        return prev[k];
+        if(dp[index][target] != -1){
+            return dp[index][target] == 1 ? true : false;
+        }
+
+        boolean take = false;
+
+        //take element 
+        if(target >= nums[index] ){
+            take = memoization(index - 1, nums, dp, target - nums[index]);
+        }
+        
+        //not take element
+        boolean notTake = memoization(index - 1, nums, dp, target);
+        
+        dp[index][target] = (take || notTake) == true ? 1 : 0;
+
+        return (take || notTake);
     }
+
 }
