@@ -14,7 +14,7 @@ class Solution {
         int n = nums.length;
         int halfSum = totalSum/2;
         
-        return tabulation(nums, halfSum);
+        return spaceOptimization(nums, halfSum);
 
         /*int[][] dp = new int[n][halfSum + 1];
         
@@ -54,7 +54,7 @@ class Solution {
         dp[index][target] = (take || notTake) == true ? 1 : 0;
 
         return (take || notTake);
-    }*/
+    } 
 
     private boolean tabulation(int[] nums, int sum){
         int rows = nums.length;
@@ -88,6 +88,43 @@ class Solution {
         }
 
         return dp[rows - 1][sum];
+    } */
+
+    private boolean spaceOptimization(int[] nums, int sum){
+        int rows = nums.length;
+        int cols = sum + 1;
+        boolean[] prev = new boolean[cols];  // store index as rows and sum as cols 
+        
+        //fill base cases
+        //1. if sum is 0 then it is achievable at every index
+        prev[0] = true;
+
+        //2. in 0th row we consider only first element from the array so if our required target is same as that element or lesser so that we can take more elements later then we can consider it 
+        if(nums[0] <= sum){
+            prev[nums[0]] = true;
+        }
+
+        for(int index = 1; index < rows; index++){
+            
+            boolean[] curr = new boolean[cols];
+
+            for(int target = 1; target <= sum; target++){
+                boolean take = false;
+                
+                if(target >= nums[index] ){
+                    take = prev[target - nums[index]];
+                }
+                
+                //not take element
+                boolean notTake = prev[target];
+                
+                curr[target] = (take || notTake);
+            }
+            prev = curr;
+        }
+
+        return prev[sum];
     }
+
 
 }
