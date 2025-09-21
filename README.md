@@ -189,6 +189,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
 | [1250-longest-common-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1250-longest-common-subsequence) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
+| [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1851-maximum-number-of-events-that-can-be-attended-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1851-maximum-number-of-events-that-can-be-attended-ii) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2061-painting-a-grid-with-three-different-colors](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2061-painting-a-grid-with-three-different-colors) |
@@ -507,6 +508,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [1250-longest-common-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1250-longest-common-subsequence) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1302-delete-characters-to-make-fancy-string) |
+| [1437-minimum-insertion-steps-to-make-a-string-palindrome](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1437-minimum-insertion-steps-to-make-a-string-palindrome) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1818-maximum-score-from-removing-substrings) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2079-delete-duplicate-folders-in-system) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2140-longest-subsequence-repeated-k-times) |
