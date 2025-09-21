@@ -27,7 +27,7 @@ class Solution {
         }
 
         //now we have dp filled with longest common subsequence lengths at any possible index from both strings so we can use this to print our expected answer and then reverse this
-        String ans = "";
+        StringBuilder ans = new StringBuilder();
          //to iterate over both strings we need pointers for dp table rows and cols so that we can move them up and down
          int row = n1;
          int col = n2;
@@ -35,30 +35,29 @@ class Solution {
          while(row > 0 && col > 0){
 
            if(str1.charAt(row - 1) == str2.charAt(col - 1)){
-                ans += str1.charAt(row - 1);
+                ans.append(str1.charAt(row - 1));
                 row--;
                 col--;
             }else if(dp[row - 1][col] > dp[row][col - 1]){ //if upper row col val is greater go there decrease row number
-                ans += str1.charAt(row - 1); //since we are moving up we include this char in ans
+                ans.append(str1.charAt(row - 1)); //since we are moving up we include this char in ans
                 row--;   
             }else{
-                ans += str2.charAt(col - 1);
+                ans.append(str2.charAt(col - 1));
                 col--;
             }
          }
 
          //whichever string is left take that 
          while(row > 0){
-            ans += str1.charAt(row - 1);
+            ans.append(str1.charAt(row - 1));
             row--;
          }
 
          while(col > 0){
-            ans += str2.charAt(col - 1);
+            ans.append(str2.charAt(col - 1));
             col--;
          }
 
-         String result = new StringBuilder(ans).reverse().toString();
-         return result;
+         return ans.reverse().toString();
     }
 }
