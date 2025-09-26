@@ -1,7 +1,7 @@
 class Solution {
 
     //Memoization
-    int[][] dp;
+    /*int[][] dp;
     int prime = (int) (Math.pow(10, 9) + 7);
     public int numDistinct(String s, String t) {
         int n = s.length();
@@ -39,5 +39,37 @@ class Solution {
         }
 
         return dp[index1][index2];
+    }*/
+
+    //Tabulation
+    public int numDistinct(String s, String t) {
+        int n = s.length();
+        int m = t.length();
+
+        int[][] dp = new int[n+1][m+1]; 
+
+        //base cases - when j = 0 means string 2 is empty that is we have nothing to compare 
+        for(int i = 0; i < n+1; i++){
+            dp[i][0] = 1;
+        }
+
+        //for i == 0 it means we have nothing to compare so no subsequence can be formed
+        for(int j=1; j < m+1; j++){ //this j starts from 1 because j = 0 & i = 0 will give empty subsequence so it should be 1
+            dp[0][j] = 0;
+        }
+
+        for(int row = 1; row < n+1; row++){
+            for(int col = 1; col < m+1 ; col++){
+
+                if(s.charAt(row-1) == t.charAt(col-1)){
+                    int leave = dp[row-1][col-1];
+                    int stay = dp[row-1][col];
+                    dp[row][col] = ( leave + stay ); //it might happen that char in t can match with other characters in s to give us more subsequences 
+                }else{
+                    dp[row][col] =  dp[row-1][col]; //we need each character of t to find match in s so 
+                }
+            }
+        }
+        return dp[n][m];
     }
 }
