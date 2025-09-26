@@ -42,7 +42,7 @@ class Solution {
     }*/
 
     //Tabulation
-    public int numDistinct(String s, String t) {
+    /*public int numDistinct(String s, String t) {
         int n = s.length();
         int m = t.length();
 
@@ -71,5 +71,27 @@ class Solution {
             }
         }
         return dp[n][m];
+    }*/
+
+    //Space optimisation
+    public int numDistinct(String s, String t) {
+        int n = s.length();
+        int m = t.length();
+
+        int[] prev = new int[m+1]; 
+        prev[0] = 1;
+        
+        for(int row = 1; row < n+1; row++){
+            for(int col = m; col >= 1 ; col--){ //since we need prev row same col and prev row prec col we can store curr val in prev row same col this cant be done if we move col index from 0 to m as for computing we would override values which will be used in future computation
+                if(s.charAt(row-1) == t.charAt(col-1)){
+                    int leave = prev[col-1];
+                    int stay = prev[col];
+                    prev[col] = ( leave + stay ); //it might happen that char in t can match with other characters in s to give us more subsequences 
+                }else{
+                    prev[col] =  prev[col]; //we need each character of t to find match in s so 
+                }
+            }
+        }
+        return prev[m];
     }
 }
