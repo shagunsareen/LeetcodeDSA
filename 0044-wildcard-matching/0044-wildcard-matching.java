@@ -56,7 +56,7 @@ class Solution {
 
 
     //Tabulation
-    public boolean isMatch(String s, String p) {
+    /*public boolean isMatch(String s, String p) {
         int n = s.length();
         int m = p.length();
 
@@ -64,11 +64,11 @@ class Solution {
         dp[0][0] = true;
 
         for(int i=1; i<=n; i++){
-            dp[i][0] = false;
+            dp[i][0] = false;  // non-empty string can't match empty pattern
         }
 
         for(int j=1; j<=m; j++){
-            dp[0][j] = isAllStars(p, j-1);
+            dp[0][j] = isAllStars(p, j-1); // empty string matches only if pattern has all *
         }
 
         for(int i=1; i<=n; i++){
@@ -85,5 +85,36 @@ class Solution {
             }
         }
         return dp[n][m];
+    }*/
+
+    public boolean isMatch(String s, String p) {
+        int n = s.length();
+        int m = p.length();
+
+        boolean[] prev = new boolean[m+1];
+        boolean[] curr = new boolean[m+1];
+
+        prev[0] = true; // empty string vs empty pattern
+
+        for(int j=1; j<=m; j++){
+            prev[j] = isAllStars(p, j-1);  // empty string matches only if pattern has all *
+        }
+
+        for(int i=1; i<=n; i++){
+            curr[0] = false; //taking into consideration base case where j = 0
+            for(int j=1; j<=m; j++){
+                if(s.charAt(i-1) == p.charAt(j-1) || p.charAt(j-1) == '?'){
+                        curr[j] = prev[j-1];
+                }else {
+                    if(p.charAt(j-1) == '*'){
+                            curr[j] = prev[j] || curr[j-1];
+                    }else{ //characters dont match and s1[i] is not '*'
+                        curr[j] = false;
+                    }
+                }
+            }
+            prev = curr.clone();
+        }
+        return prev[m];
     }
 }
