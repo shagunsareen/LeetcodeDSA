@@ -161,6 +161,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0005-longest-palindromic-substring) |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
+| [0044-wildcard-matching](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0044-wildcard-matching) |
 | [0053-maximum-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0063-unique-paths-ii) |
@@ -369,6 +370,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0002-add-two-numbers) |
 | [0021-merge-two-sorted-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0021-merge-two-sorted-lists) |
 | [0025-reverse-nodes-in-k-group](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0025-reverse-nodes-in-k-group) |
+| [0044-wildcard-matching](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0044-wildcard-matching) |
 | [0206-reverse-linked-list](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0206-reverse-linked-list) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
 | [2050-count-good-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2050-count-good-numbers) |
@@ -501,6 +503,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0005-longest-palindromic-substring) |
 | [0020-valid-parentheses](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0020-valid-parentheses) |
 | [0038-count-and-say](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0038-count-and-say) |
+| [0044-wildcard-matching](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0044-wildcard-matching) |
 | [0049-group-anagrams](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0049-group-anagrams) |
 | [0072-edit-distance](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0072-edit-distance) |
 | [0091-decode-ways](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0091-decode-ways) |
@@ -627,6 +630,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0011-container-with-most-water) |
+| [0044-wildcard-matching](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0044-wildcard-matching) |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
