@@ -59,7 +59,7 @@ class Solution {
         }
 
         return dp[index][transNo];
-    }*/
+    }
 
     public int maxProfit(int k, int[] prices){
         int n = prices.length;
@@ -80,5 +80,29 @@ class Solution {
        }
 
        return dp[0][0];
+    }*/
+
+    public int maxProfit(int k, int[] prices){
+        int n = prices.length;
+        int[] prev = new int[2*k+1];
+
+        for(int index = n-1; index >= 0 ; index--){
+            int[] curr = new int[2*k+1];
+
+            for(int trans = 2*k-1; trans >= 0; trans--){
+                if(trans % 2 == 0){ //buy 
+                    int buy =   -prices[index] + prev[trans + 1];
+                    int doNothing = prev[trans];
+                    curr[trans] = Math.max(buy, doNothing);
+                }else{
+                    int sell =  prices[index] + prev[trans + 1];
+                    int doNothing = prev[trans];
+                    curr[trans] = Math.max(sell, doNothing);
+                }
+            }
+            prev = curr;
+       }
+
+       return prev[0];
     }
 }
