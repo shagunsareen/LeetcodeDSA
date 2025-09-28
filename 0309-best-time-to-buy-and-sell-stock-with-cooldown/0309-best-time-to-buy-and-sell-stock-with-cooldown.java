@@ -38,21 +38,27 @@ class Solution {
 
     public int maxProfit(int[] prices) {
         int n = prices.length;
-        int[][] dp = new int[n+2][2];
+        int[] front2 = new int[2];
+        int[] front1 = new int[2];
 
         for(int index = n-1; index >= 0; index--){
+            int[] curr = new int[2];
             for(int buy = 0; buy <= 1; buy++){
                 if(buy == 0){
-                    int buyStock = -prices[index] + dp[index + 1][1];
-                    int doNothing = dp[index + 1][0];
-                    dp[index][buy] = Math.max(buyStock, doNothing);
+                    int buyStock = -prices[index] + front1[1];
+                    int doNothing = front1[0];
+                    
+                    curr[buy] = Math.max(buyStock, doNothing);
                 }else{
-                    int sellStock = prices[index] + dp[index + 2][0]; //since after selling i cant pick next element so i jump to index + 2
-                    int doNothing = dp[index + 1][1];   
-                    dp[index][buy] =  Math.max(sellStock, doNothing);
+                    int sellStock = prices[index] + front2[0]; //since after selling i cant pick next element so i jump to index + 2
+                    int doNothing = front1[1];   
+                    
+                    curr[buy] =  Math.max(sellStock, doNothing);
                 }
             }
+            front2 = front1;
+            front1 = curr;      
         }
-        return dp[0][0];
+        return front1[0];
     }
 }
