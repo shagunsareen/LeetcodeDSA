@@ -1,5 +1,6 @@
 class Solution {
 
+    /*
     //Memoization
     public int maxProfit(int[] prices) {
         int n = prices.length;
@@ -36,5 +37,33 @@ class Solution {
         }
 
         return dp[index][buy];
+    }*/
+
+    //Tabulation - will go from n-1 to 0 as memoization went from o to n-1 (Bottom up approach)
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int[][] dp = new int[n+1][2];
+
+        //base case if for index == n when we are not left with any more days to buy or sell
+        dp[n][0] = 0;
+        dp[n][1] = 0; 
+
+        for(int index = n-1; index>=0; index--){
+            for(int buy = 0; buy <=1; buy++){
+                if(buy == 0){ //we can buy the stock - invest money and go to next index
+                    int buyStock = -prices[index] + dp[index + 1][1];
+                    int doNothing = dp[index + 1][0];
+
+                    dp[index][buy] = Math.max(buyStock , doNothing);
+                }else if(buy == 1){ //sell case 
+                    int sellStock = prices[index] + dp[index + 1][0];
+                    int doNothing = dp[index + 1][1];
+
+                    dp[index][buy] = Math.max(sellStock , doNothing);
+                }
+            }
+        }
+
+        return dp[0][0];
     }
 }
