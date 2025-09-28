@@ -25,7 +25,8 @@ class Solution {
         return prev[0][k];
     }*/
 
-    public int maxProfit(int k, int[] prices) {
+    //transaction number as variable instead of buy and cap
+    /*public int maxProfit(int k, int[] prices) {
         int n = prices.length;
         int[][] dp = new int[n][2*k];
 
@@ -58,5 +59,26 @@ class Solution {
         }
 
         return dp[index][transNo];
-    } 
+    }*/
+
+    public int maxProfit(int k, int[] prices){
+        int n = prices.length;
+        int[][] dp = new int[n+1][2*k+1];
+
+       for(int index = n-1; index >= 0 ; index--){
+            for(int trans = 2*k-1; trans >= 0; trans--){
+                if(trans % 2 == 0){ //buy 
+                    int buy =   -prices[index] + dp[index+1][trans + 1];
+                    int doNothing = dp[index+1][trans];
+                    dp[index][trans] = Math.max(buy, doNothing);
+                }else{
+                    int sell =  prices[index] + dp[index+1][trans + 1];
+                    int doNothing = dp[index+1][trans];
+                    dp[index][trans] = Math.max(sell, doNothing);
+                }
+            }
+       }
+
+       return dp[0][0];
+    }
 }
