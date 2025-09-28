@@ -1,5 +1,6 @@
 class Solution {
-    public int maxProfit(int[] prices) {
+    
+    /*public int maxProfit(int[] prices) {
         int n = prices.length;
         int[][][] dp = new int[n][2][3]; //index - buy/notBuy 
 
@@ -35,5 +36,43 @@ class Solution {
         }
 
         return dp[index][buy][cap];
+    }*/
+
+    //Tabulation
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int[][][] dp = new int[n+1][2][3];
+
+        //if cap = 0 index and buy can be anything
+        /*for(int index = 0; index < n; index++){
+            for(int buy = 0; buy <= 1; buy++){
+                dp[index][buy][0] = 0;
+            }
+        }
+
+        for(int buy = 0; buy <= 1; buy++){
+            for(int cap = 0; buy <= 2; cap++){
+                dp[n][buy][cap] = 0;
+            }
+        }*/
+
+        for(int index = n-1; index >= 0; index--){
+            for(int buy = 0; buy <= 1; buy++){
+                 for(int cap = 1; cap <= 2; cap++){ //cap starts from 1 because for 0 its always going to be 0
+                    if(buy == 0){ //we can buy the stock - invest money and go to next index
+                        int buyStock = -prices[index] + dp[index + 1][1][cap];
+                        int doNothing = dp[index + 1][0][cap];
+
+                        dp[index][buy][cap] = Math.max(buyStock , doNothing);
+                    }else if(buy == 1){ //sell case 
+                        int sellStock = prices[index] + dp[index + 1][0][cap-1];
+                        int doNothing = dp[index + 1][1][cap];
+
+                        dp[index][buy][cap] = Math.max(sellStock , doNothing);
+                    }
+                }
+            }
+        }
+        return dp[0][0][2];
     }
 }
