@@ -1,7 +1,7 @@
 class Solution {
 
     //memoiz
-    public int maxProfit(int[] prices) {
+    /*public int maxProfit(int[] prices) {
         int n = prices.length;
         int[][] dp = new int[n][2];
 
@@ -33,5 +33,26 @@ class Solution {
         }
 
         return dp[index][buy];
+    }*/
+
+
+    public int maxProfit(int[] prices) {
+        int n = prices.length;
+        int[][] dp = new int[n+2][2];
+
+        for(int index = n-1; index >= 0; index--){
+            for(int buy = 0; buy <= 1; buy++){
+                if(buy == 0){
+                    int buyStock = -prices[index] + dp[index + 1][1];
+                    int doNothing = dp[index + 1][0];
+                    dp[index][buy] = Math.max(buyStock, doNothing);
+                }else{
+                    int sellStock = prices[index] + dp[index + 2][0]; //since after selling i cant pick next element so i jump to index + 2
+                    int doNothing = dp[index + 1][1];   
+                    dp[index][buy] =  Math.max(sellStock, doNothing);
+                }
+            }
+        }
+        return dp[0][0];
     }
 }
