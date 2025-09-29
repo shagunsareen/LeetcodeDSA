@@ -1,6 +1,6 @@
 class Solution {
     //Memoization
-    public int lengthOfLIS(int[] nums) {
+    /*public int lengthOfLIS(int[] nums) {
         int n = nums.length;
         int[][] dp = new int[n][n+1]; //dp will store length of subsequence starting from ith index where last element considered was at prev_index
         //since curr index will range from 0 to n, prev_index will range from -1 to n-1 so we take second element size in dp array till n+1 
@@ -27,11 +27,34 @@ class Solution {
         if(prev_index == -1 || nums[index] > nums[prev_index]){
             take = 1 + memoiz(dp, nums, index + 1, index); //increase length, update to next index, update prev index to curr index
         }
-        
+
         notTake = memoiz(dp, nums, index + 1, prev_index);
 
         dp[index][prev_index + 1] = Math.max(take, notTake);
 
         return dp[index][prev_index + 1];
+    }*/
+
+
+    //Tabulation
+     public int lengthOfLIS(int[] nums) {
+        int n = nums.length;
+        int[][] dp = new int[n+1][n+1]; //since we have to take care of base case when index == n returned 0 in memoization so we keep n+1 to store nth index value
+        
+        for(int index = n-1; index >= 0; index--){ // 0 to n-1
+            for(int prev_index = index-1; prev_index >= -1; prev_index--){ //-1 to n-1 
+                    int take = 0;
+                    int notTake = 0;
+                    
+                    if(prev_index == -1 || nums[index] > nums[prev_index]){
+                        take = 1 + dp[index + 1][index + 1]; //since we are storing prev indexes after shifting it by 1
+                    }
+
+                    notTake = dp[index + 1][prev_index + 1];
+
+                    dp[index][prev_index + 1] = Math.max(take, notTake);
+            }
+        }
+        return dp[0][0];
     }
 }
