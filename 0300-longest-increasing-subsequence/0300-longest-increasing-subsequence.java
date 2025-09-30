@@ -37,7 +37,7 @@ class Solution {
 
 
     //Tabulation
-     public int lengthOfLIS(int[] nums) {
+     /*public int lengthOfLIS(int[] nums) {
         int n = nums.length;
         int[][] dp = new int[n+1][n+1]; //since we have to take care of base case when index == n returned 0 in memoization so we keep n+1 to store nth index value
         
@@ -56,5 +56,27 @@ class Solution {
             }
         }
         return dp[0][0];
+    }*/
+
+    public int lengthOfLIS(int[] nums) {
+        int n = nums.length;
+        int res = Integer.MIN_VALUE;
+        int[] dp = new int[n+1];
+        Arrays.fill(dp, 1); //since if we consider element itself then LIS is 1 for that element
+
+        //store LIS length till every index 
+        for(int i=0; i<n; i++){
+            for(int j=0; j<i; j++){
+                if(nums[i] > nums[j] && (1 + dp[j] > dp[i])){
+                    dp[i] = 1 + dp[j];
+                }
+            }
+            //update max LIS
+            if(dp[i] > res){
+                res = dp[i];
+            }
+        }
+
+        return res;
     }
 }
