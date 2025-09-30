@@ -58,7 +58,7 @@ class Solution {
         return dp[0][0];
     }*/
 
-    public int lengthOfLIS(int[] nums) {
+    /*public int lengthOfLIS(int[] nums) {
         int n = nums.length;
         int res = Integer.MIN_VALUE;
         int[] dp = new int[n+1];
@@ -78,5 +78,48 @@ class Solution {
         }
 
         return res;
+    }*/
+
+    //binary search
+    public int lengthOfLIS(int[] nums) {
+        ArrayList<Integer> sub = new ArrayList<>();
+        //add first element to consider it in subsequence 
+        sub.add(nums[0]);
+
+        for(int i=1; i<nums.length; i++){
+            int num = nums[i];
+
+            if(num > sub.get(sub.size() - 1)){
+                sub.add(num);
+            }else{
+                //find place where current element can fit in in subsequence so that we can calculate longest length 
+                int j = binarySearch(num, sub);
+                sub.set(j, num);
+            }
+        }
+
+        return sub.size();
+    }
+
+    private int binarySearch(int num, ArrayList<Integer> sub){
+        int left = 0;
+        int right = sub.size() - 1;
+        int mid = (left + right)/2;
+
+        while(left < right){
+            
+            mid = (left + right)/2;
+
+            if(sub.get(mid) == num){
+                return mid;
+            }
+
+            if(sub.get(mid) < num){
+                left = mid + 1;
+            }else{
+                right = mid;
+            }
+        }
+        return left;
     }
 }
