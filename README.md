@@ -51,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1036-rotting-oranges](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1036-rotting-oranges) |
 | [1049-minimum-domino-rotations-for-equal-row](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1049-minimum-domino-rotations-for-equal-row) |
+| [1129-longest-string-chain](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1129-longest-string-chain) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1293-three-consecutive-odds](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1293-three-consecutive-odds) |
 | [1335-maximum-candies-allocated-to-k-children](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1335-maximum-candies-allocated-to-k-children) |
@@ -204,6 +205,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
+| [1129-longest-string-chain](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1129-longest-string-chain) |
 | [1170-shortest-common-supersequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1250-longest-common-subsequence) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
@@ -251,6 +253,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
+| [1129-longest-string-chain](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1129-longest-string-chain) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
@@ -311,6 +314,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [0940-fruit-into-baskets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0940-fruit-into-baskets) |
+| [1129-longest-string-chain](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1129-longest-string-chain) |
 | [1218-lowest-common-ancestor-of-deepest-leaves](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1218-lowest-common-ancestor-of-deepest-leaves) |
 | [1227-number-of-equivalent-domino-pairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1227-number-of-equivalent-domino-pairs) |
 | [1500-count-largest-group](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1500-count-largest-group) |
@@ -405,6 +409,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0647-palindromic-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0647-palindromic-substrings) |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0868-push-dominoes) |
+| [1129-longest-string-chain](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1129-longest-string-chain) |
 | [1621-number-of-subsequences-that-satisfy-the-given-sum-condition](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1621-number-of-subsequences-that-satisfy-the-given-sum-condition) |
 | [2320-find-all-k-distant-indices-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2320-find-all-k-distant-indices-in-an-array) |
 | [2497-maximum-matching-of-players-with-trainers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2497-maximum-matching-of-players-with-trainers) |
@@ -529,6 +534,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
 | [0868-push-dominoes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0868-push-dominoes) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1058-lexicographically-smallest-equivalent-string) |
+| [1129-longest-string-chain](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1129-longest-string-chain) |
 | [1170-shortest-common-supersequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1170-shortest-common-supersequence) |
 | [1250-longest-common-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1250-longest-common-subsequence) |
 | [1302-delete-characters-to-make-fancy-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1302-delete-characters-to-make-fancy-string) |
