@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0494-target-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0494-target-sum) |
 | [0518-coin-change-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0518-coin-change-ii) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
+| [0673-number-of-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0747-min-cost-climbing-stairs) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
@@ -197,6 +198,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0518-coin-change-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0518-coin-change-ii) |
 | [0583-delete-operation-for-two-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0647-palindromic-substrings) |
+| [0673-number-of-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0747-min-cost-climbing-stairs) |
 | [0806-domino-and-tromino-tiling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0806-domino-and-tromino-tiling) |
@@ -749,10 +751,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Binary Indexed Tree
 |  |
 | ------- |
+| [0673-number-of-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
 ## Segment Tree
 |  |
 | ------- |
+| [0673-number-of-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [2280-count-good-triplets-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2280-count-good-triplets-in-an-array) |
 | [3789-maximize-subarrays-after-removing-one-conflicting-pair](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3789-maximize-subarrays-after-removing-one-conflicting-pair) |
 | [3790-fruits-into-baskets-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3790-fruits-into-baskets-ii) |
