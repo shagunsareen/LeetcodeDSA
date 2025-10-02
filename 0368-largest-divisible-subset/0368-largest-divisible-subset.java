@@ -1,36 +1,38 @@
 class Solution {
     public List<Integer> largestDivisibleSubset(int[] nums) {
-        List<Integer> result = new ArrayList<>();
         int n = nums.length;
+        Arrays.sort(nums);
 
-        //sort the array and find longest increasing subsequence 
-        Arrays.sort(nums); 
         int[] dp = new int[n];
-        Arrays.fill(dp, 1); //since every element in itself is LIS of length 1 i.e. dp array should store length of lis till ith index
+        Arrays.fill(dp, 1);
 
-        //if we take each element as end index of lis then all elements before it should be taken in denomenator to check divisibility
-        int maxLis = 1;
-        for(int i=1; i<n; i++){
-            for(int j=0; j<i; j++){
-                if(nums[i] % nums[j] == 0 && 1 + dp[j] > dp[i]){
+        int[] hash = new int[n]; //to store index of element which made this dp count greatest
+        int max = Integer.MIN_VALUE;
+        int lastIndex = -1;
+
+        for(int i=0; i<n; i++)
+        {   
+            hash[i] = i; //every subset starts with itself first if it doesnt have any smaller element in subset
+            for(int j=0; j<i; j++){ //this gives us length of largest subset till this index so we update max post this loop completes so that we have index to backtrack 
+                if((nums[i] % nums[j] == 0) && (dp[i] < 1 + dp[j])){
                     dp[i] = 1 + dp[j];
-                    if(maxLis < dp[i]){
-                        maxLis = dp[i];
-                    }
+                    hash[i] = j; //taking element of jth index in subset 
                 }
             }
-        }
-
-        //Find LIS
-        int prev = -1;
-        for(int i=n-1; i>=0; i--){
-            if(dp[i] == maxLis && (prev == -1 || prev % nums[i] == 0)){
-                result.add(nums[i]);
-                maxLis--;
-                prev = nums[i];
+            if(dp[i] > max){
+                max = dp[i];
+                lastIndex = i;
             }
         }
-        
-        return result;
+
+        List<Integer> res = new ArrayList<>();
+        res.add(nums[lastIndex]);
+        //traverse back to get all elements
+        while(hash[lastIndex] != lastIndex){
+            lastIndex = hash[lastIndex];
+            res.add(nums[lastIndex]);
+        }
+
+        return res;
     }
 }
