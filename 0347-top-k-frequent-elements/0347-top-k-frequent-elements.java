@@ -1,38 +1,32 @@
 class Solution {
     public int[] topKFrequent(int[] nums, int k) {
-        
-        if(k == nums.length)
-        {
+        if(k == nums.length){
             return nums;
         }
 
-        int n = nums.length;
-        //we need frequency of each element 
-        Map<Integer, Integer> freqMap = new HashMap<>();
-
+        //freq map 
+        Map<Integer, Integer> count = new HashMap<>();
         for(int num : nums){
-            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
+            count.put(num, count.getOrDefault(num, 0) + 1);
         }
 
-        //now fetch top k elements as per the frequency
-        //put all elements into the minHeap and fetch top k elements from top
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>((n1, n2) -> freqMap.get(n1) - freqMap.get(n2)); //this means smaller freq element should be fetched first
+        //less frequent element first //ascending order 
+        Queue<Integer> queue = new PriorityQueue<>((n1, n2) -> count.get(n1) - count.get(n2));
 
-        //maintain size k of the minheap O(Nlogk)
-        for(int key : freqMap.keySet()){ //inserting keys in the minheap which is sorted by values/freq of elements
-            minHeap.add(key);
-
-            if(minHeap.size() > k){
-                minHeap.poll(); //maintain k size minheap
+        //keep only k elements in the queue 
+        for(int num : count.keySet()){
+            queue.add(num);
+            if(queue.size() > k) {
+                queue.poll();
             }
-        }
+        } //O(Nlogk)
 
-        List<Integer> res = new ArrayList<>();
-        while(k > 0){
-            res.add(minHeap.poll());
-            k--;
-        }
+        //insert these k elements in the resultant array 
+        int[] ans = new int[k];
+        for(int i=k-1; i>=0; i--){
+            ans[i] = queue.poll();
+        } //O(klogk)
 
-        return res.stream().mapToInt(i -> i).toArray();
+        return ans;
     }
 }
