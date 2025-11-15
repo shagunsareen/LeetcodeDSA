@@ -1,19 +1,29 @@
 class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
+    public List<List<String>> groupAnagrams(String[] strs) { 
+        //we make string of count of every char then we keep it as key in map and store all strings for same key 
         Map<String, List<String>> map = new HashMap<>();
+        int[] count = new int[26];
 
         for(String str : strs){
-
-            int[] freq = new int[26];
+            Arrays.fill(count, 0);
             for(char ch : str.toCharArray()){
-                freq[ch - 'a']++;
+                count[ch - 'a']++;
             }
 
-            //convert this array to string
-            String key = Arrays.toString(freq);
-            map.computeIfAbsent(key, k -> new ArrayList<>()).add(str);
-        }
+            StringBuilder sb = new StringBuilder("");
+            for(int i=0; i<26; i++){
+                sb.append('#');
+                sb.append(count[i]);
+            }
 
-        return new ArrayList<>(map.values());
+            String key = sb.toString();
+
+            if(!map.containsKey(key)){
+                map.put(key, new ArrayList());
+            }
+
+            map.get(key).add(str);
+        }
+        return new ArrayList(map.values());
     }
 }
