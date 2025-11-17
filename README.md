@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0238-product-of-array-except-self) |
+| [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0300-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
@@ -537,6 +538,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0115-distinct-subsequences](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0115-distinct-subsequences) |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
 | [0242-valid-anagram](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0242-valid-anagram) |
+| [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0516-longest-palindromic-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0516-longest-palindromic-subsequence) |
 | [0583-delete-operation-for-two-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0647-palindromic-substrings) |
@@ -612,6 +614,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
+| [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1995-finding-pairs-with-a-certain-sum) |
 ## Doubly-Linked List
