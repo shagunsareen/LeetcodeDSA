@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0004-median-of-two-sorted-arrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0011-container-with-most-water) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
+| [0036-valid-sudoku](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0036-valid-sudoku) |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0049-group-anagrams) |
 | [0053-maximum-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0053-maximum-subarray) |
@@ -303,6 +304,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0001-two-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0036-valid-sudoku](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0073-set-matrix-zeroes) |
 | [0138-copy-list-with-random-pointer](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0138-copy-list-with-random-pointer) |
@@ -622,6 +624,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 |  |
 | ------- |
+| [0036-valid-sudoku](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0036-valid-sudoku) |
 | [0063-unique-paths-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0063-unique-paths-ii) |
 | [0064-minimum-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0073-set-matrix-zeroes) |
