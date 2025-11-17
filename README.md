@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
+| [0128-longest-consecutive-sequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0128-longest-consecutive-sequence) |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
@@ -307,6 +308,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0036-valid-sudoku](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0073-set-matrix-zeroes) |
+| [0128-longest-consecutive-sequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0128-longest-consecutive-sequence) |
 | [0138-copy-list-with-random-pointer](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
 | [0141-linked-list-cycle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0141-linked-list-cycle) |
@@ -504,6 +506,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Union Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0200-number-of-islands) |
 | [1058-lexicographically-smallest-equivalent-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1058-lexicographically-smallest-equivalent-string) |
 | [2588-maximum-number-of-points-from-grid-queries](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2588-maximum-number-of-points-from-grid-queries) |
