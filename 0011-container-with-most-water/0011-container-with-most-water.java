@@ -1,24 +1,22 @@
 class Solution {
     public int maxArea(int[] height) {
-
         int n = height.length;
-        int left = 0;
-        int right = n - 1;
+        int left  = 0;
+        int right = n-1;
         int maxArea = 0;
 
         while(left < right){
             int width = right - left;
-            int length = Math.min(height[left], height[right]); 
-            int currArea = width * length; 
-            maxArea = Math.max(currArea, maxArea);   
+            int area = Math.min(height[left], height[right]) * width;
+            maxArea = Math.max(area, maxArea);
 
-            if(height[left] <= height[right]){ //we move shorter height pointer so that we can get better height in future 
+            if(height[left] <= height[right]){ //prefer long height to get max area
                 left++;
             }else{
                 right--;
             }
         }
-        
+
         return maxArea;
     }
 }
