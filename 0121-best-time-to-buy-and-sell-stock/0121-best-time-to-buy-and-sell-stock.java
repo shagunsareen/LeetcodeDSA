@@ -1,17 +1,13 @@
 class Solution {
     public int maxProfit(int[] prices) {
-        
-        //maintain min value from left while considering every right ptr val as selling day 
-        int leftMin = prices[0]; //buy
+        int n = prices.length;
+        int leftMin = prices[0];
         int maxProfit = 0;
-        
-        for(int right=0; right<prices.length; right++){
-            int curr = prices[right];
 
-            int currProfit = prices[right] - leftMin;
-            maxProfit = Math.max(maxProfit, currProfit);
-
-            leftMin = Math.min(leftMin, curr);
+        for(int i=0; i<n; i++){
+           int profit =  prices[i] - leftMin;
+           leftMin = Math.min(leftMin, prices[i]);
+           maxProfit = Math.max(profit, maxProfit);
         }
 
         return maxProfit;
