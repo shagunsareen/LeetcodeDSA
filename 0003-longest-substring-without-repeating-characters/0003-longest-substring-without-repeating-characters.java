@@ -8,17 +8,14 @@ class Solution {
         Map<Character, Integer> map = new HashMap<>();  //character, lastIndexOfChar
         while(end < n){
             char ch = s.charAt(end);
-
-            if(!map.containsKey(ch)){
-                map.put(ch, end);
-            }else{
-                ans = Math.max(ans, end - start);
-                start = Math.max(start, map.get(ch) + 1); //whichever is later
-                map.put(ch, end);
+            
+            if(map.containsKey(ch)){  
+                start = Math.max(start, map.get(ch) + 1); //whichever is later     
             }
+            map.put(ch, end);
             end++;
+            ans = Math.max(ans, end - start);
         }
-        ans = Math.max(ans, end - start);
-        return ans == 0 ? n : ans;
+        return ans;
     }
 }
