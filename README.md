@@ -313,6 +313,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0036-valid-sudoku](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0036-valid-sudoku) |
 | [0049-group-anagrams](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0049-group-anagrams) |
 | [0073-set-matrix-zeroes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0073-set-matrix-zeroes) |
+| [0076-minimum-window-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0076-minimum-window-substring) |
 | [0128-longest-consecutive-sequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0128-longest-consecutive-sequence) |
 | [0138-copy-list-with-random-pointer](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0138-copy-list-with-random-pointer) |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
@@ -487,6 +488,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0076-minimum-window-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0076-minimum-window-substring) |
 | [0424-longest-repeating-character-replacement](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0567-permutation-in-string) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
@@ -546,6 +548,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0044-wildcard-matching](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0044-wildcard-matching) |
 | [0049-group-anagrams](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0049-group-anagrams) |
 | [0072-edit-distance](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0072-edit-distance) |
+| [0076-minimum-window-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0076-minimum-window-substring) |
 | [0091-decode-ways](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0091-decode-ways) |
 | [0115-distinct-subsequences](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0115-distinct-subsequences) |
 | [0125-valid-palindrome](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0125-valid-palindrome) |
