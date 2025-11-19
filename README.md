@@ -323,6 +323,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0242-valid-anagram](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0424-longest-repeating-character-replacement](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0567-permutation-in-string) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
@@ -423,6 +424,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0160-intersection-of-two-linked-lists) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
+| [0567-permutation-in-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0567-permutation-in-string) |
 | [0647-palindromic-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0647-palindromic-substrings) |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
 | [0868-push-dominoes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0868-push-dominoes) |
@@ -486,6 +488,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0424-longest-repeating-character-replacement](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0424-longest-repeating-character-replacement) |
+| [0567-permutation-in-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0567-permutation-in-string) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
 | [0940-fruit-into-baskets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0940-fruit-into-baskets) |
 | [1813-maximum-erasure-value](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1813-maximum-erasure-value) |
@@ -551,6 +554,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0424-longest-repeating-character-replacement](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0516-longest-palindromic-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0516-longest-palindromic-subsequence) |
+| [0567-permutation-in-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0567-permutation-in-string) |
 | [0583-delete-operation-for-two-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0647-palindromic-substrings) |
 | [0768-partition-labels](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0768-partition-labels) |
