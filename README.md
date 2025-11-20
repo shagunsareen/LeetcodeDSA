@@ -36,6 +36,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0217-contains-duplicate) |
 | [0238-product-of-array-except-self](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0238-product-of-array-except-self) |
+| [0239-sliding-window-maximum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0239-sliding-window-maximum) |
 | [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0300-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
@@ -239,6 +240,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Queue
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0239-sliding-window-maximum) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2527-count-subarrays-with-fixed-bounds) |
@@ -246,6 +248,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Monotonic Queue
 |  |
 | ------- |
+| [0239-sliding-window-maximum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0239-sliding-window-maximum) |
 | [0954-maximum-sum-circular-subarray](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0954-maximum-sum-circular-subarray) |
 | [2180-maximum-number-of-tasks-you-can-assign](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2180-maximum-number-of-tasks-you-can-assign) |
 | [2527-count-subarrays-with-fixed-bounds](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2527-count-subarrays-with-fixed-bounds) |
@@ -290,6 +293,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0215-kth-largest-element-in-an-array) |
+| [0239-sliding-window-maximum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0239-sliding-window-maximum) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0789-kth-largest-element-in-a-stream) |
@@ -489,6 +493,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0076-minimum-window-substring](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0076-minimum-window-substring) |
+| [0239-sliding-window-maximum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0239-sliding-window-maximum) |
 | [0424-longest-repeating-character-replacement](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0424-longest-repeating-character-replacement) |
 | [0567-permutation-in-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0567-permutation-in-string) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
