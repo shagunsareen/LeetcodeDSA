@@ -15,7 +15,7 @@ class Solution {
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
                 if(grid[i][j] == '1' && !visited[i][j]){
-                   bfs(i, j, visited, grid);
+                   dfs(i, j, visited, grid);
                    count++;
                 }
             }
@@ -23,7 +23,7 @@ class Solution {
         return count;
     }
 
-    private void bfs(int row, int col, boolean[][] visited, char[][] grid){
+    private void dfs(int row, int col, boolean[][] visited, char[][] grid){
         if(row < 0 || row >= grid.length || col < 0 || col >= grid[0].length){
             return;
         }
@@ -40,7 +40,7 @@ class Solution {
             int x1 = row + dir[0];
             int y1 = col + dir[1];
 
-            bfs(x1, y1, visited, grid);
+            dfs(x1, y1, visited, grid);
         }
     }
 
