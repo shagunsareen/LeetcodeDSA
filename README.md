@@ -27,6 +27,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0123-best-time-to-buy-and-sell-stock-iii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0123-best-time-to-buy-and-sell-stock-iii) |
 | [0128-longest-consecutive-sequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0128-longest-consecutive-sequence) |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0188-best-time-to-buy-and-sell-stock-iv](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0188-best-time-to-buy-and-sell-stock-iv) |
@@ -461,6 +462,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0002-add-two-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0002-add-two-numbers) |
 | [0062-unique-paths](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0062-unique-paths) |
 | [0070-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0070-climbing-stairs) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
@@ -680,6 +682,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0020-valid-parentheses](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0155-min-stack) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1818-maximum-score-from-removing-substrings) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
