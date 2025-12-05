@@ -1,6 +1,6 @@
 class MinStack {
 
-    private Stack<int[]> stack; 
+    /*private Stack<int[]> stack; 
 
     public MinStack() {
         stack = new Stack<>();
@@ -28,6 +28,39 @@ class MinStack {
     
     public int getMin() {
         return stack.peek()[1];
+    }*/
+
+    //Approach 2 - Two stacks
+    private Stack<Integer> stack; 
+    private Stack<Integer> minStack;
+
+    public MinStack() {
+        stack = new Stack<>();
+        minStack = new Stack<>();
+    }
+    
+    public void push(int val) {
+        stack.push(val);
+
+        if(minStack.isEmpty() || val <= minStack.peek()){
+            minStack.push(val); //update minstack is this is the smallest value 
+        }
+    }
+    
+    public void pop() {
+        //if top of stack is top of minstack pop that as well
+        if(stack.peek().equals(minStack.peek())){
+            minStack.pop();
+        }
+        stack.pop();
+    }
+    
+    public int top() {
+        return stack.peek();
+    }
+    
+    public int getMin() {
+        return minStack.peek();
     }
 }
 
