@@ -637,6 +637,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
+| [0155-min-stack](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0155-min-stack) |
 | [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1995-finding-pairs-with-a-certain-sum) |
@@ -679,6 +680,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0020-valid-parentheses](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
+| [0155-min-stack](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0155-min-stack) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1818-maximum-score-from-removing-substrings) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
