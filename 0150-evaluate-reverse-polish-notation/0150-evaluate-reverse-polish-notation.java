@@ -1,9 +1,18 @@
 class Solution {
-    public int evalRPN(String[] tokens) {
-        Stack<Integer> stack = new Stack<>();
+    private static final Map<String, BiFunction<Integer, Integer, Integer>> OPERATIONS = new HashMap<>();
+
+    static{
+        OPERATIONS.put("+", (a,b) -> a + b);
+        OPERATIONS.put("-", (a,b) -> a - b);
+        OPERATIONS.put("*", (a,b) -> a * b);
+        OPERATIONS.put("/", (a,b) -> a / b);
+    }
+    
+    public int evalRPN(String[] tokens) {  
+    /*   Stack<Integer> stack = new Stack<>();
 
         for(String token : tokens){
-            if("+-*/".contains(token)){        
+            if("+*-/".contains(token)){        
                 int num2 = stack.pop();
                 int num1 = stack.pop();
 
@@ -30,6 +39,26 @@ class Solution {
             }
 
         }
+        return stack.pop(); 
+    */
+
+        //Lambda solution
+        Stack<Integer> stack = new Stack<>();
+
+        for(String token : tokens){
+            if(OPERATIONS.containsKey(token)){        
+                int num2 = stack.pop();
+                int num1 = stack.pop();
+                
+                BiFunction<Integer, Integer, Integer> operation;
+                operation = OPERATIONS.get(token);
+                int result = operation.apply(num1, num2);
+                stack.push(result);
+            }else{
+                stack.push(Integer.valueOf(token));
+            }
+        }
+
         return stack.pop();
     }
 }
