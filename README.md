@@ -50,6 +50,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0673-number-of-longest-increasing-subsequence) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
+| [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0747-min-cost-climbing-stairs) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0934-bitwise-ors-of-subarrays) |
@@ -684,6 +685,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0155-min-stack) |
+| [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1818-maximum-score-from-removing-substrings) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
@@ -725,6 +727,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
+| [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
 ## Number Theory
 |  |
