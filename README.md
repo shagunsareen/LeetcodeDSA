@@ -53,6 +53,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0747-min-cost-climbing-stairs) |
 | [0797-rabbits-in-forest](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0797-rabbits-in-forest) |
+| [0853-car-fleet](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0853-car-fleet) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0934-bitwise-ors-of-subarrays) |
 | [0940-fruit-into-baskets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0940-fruit-into-baskets) |
 | [0945-snakes-and-ladders](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0945-snakes-and-ladders) |
@@ -268,6 +269,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0368-largest-divisible-subset](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0368-largest-divisible-subset) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
 | [0778-reorganize-string](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0778-reorganize-string) |
+| [0853-car-fleet](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0853-car-fleet) |
 | [1129-longest-string-chain](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1129-longest-string-chain) |
 | [1352-maximum-profit-in-job-scheduling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1352-maximum-profit-in-job-scheduling) |
 | [1478-maximum-number-of-events-that-can-be-attended](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1478-maximum-number-of-events-that-can-be-attended) |
@@ -686,6 +688,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0150-evaluate-reverse-polish-notation](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0155-min-stack) |
 | [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
+| [0853-car-fleet](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0853-car-fleet) |
 | [1818-maximum-score-from-removing-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1818-maximum-score-from-removing-substrings) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
 | [3445-lexicographically-minimum-string-after-removing-stars](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3445-lexicographically-minimum-string-after-removing-stars) |
@@ -728,6 +731,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
 | [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
+| [0853-car-fleet](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0853-car-fleet) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
 ## Number Theory
 |  |
