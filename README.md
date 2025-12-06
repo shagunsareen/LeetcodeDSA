@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0064-minimum-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0073-set-matrix-zeroes) |
 | [0075-sort-colors](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0075-sort-colors) |
+| [0084-largest-rectangle-in-histogram](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0118-pascals-triangle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0118-pascals-triangle) |
 | [0120-triangle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0120-triangle) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
@@ -685,6 +686,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0020-valid-parentheses](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0020-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0155-min-stack) |
 | [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
@@ -730,6 +732,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0042-trapping-rain-water) |
+| [0084-largest-rectangle-in-histogram](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0084-largest-rectangle-in-histogram) |
 | [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0853-car-fleet) |
 | [3001-apply-operations-to-maximize-score](https://github.com/shagunsareen/LeetcodeDSA/tree/master/3001-apply-operations-to-maximize-score) |
