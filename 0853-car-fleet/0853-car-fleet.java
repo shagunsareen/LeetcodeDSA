@@ -1,6 +1,6 @@
 class Solution {
     public int carFleet(int target, int[] position, int[] speed) {
-        int n = position.length;
+        /*int n = position.length;
         double[][] cars = new double[n][2];
 
         for(int i=0; i<n; i++){
@@ -21,6 +21,30 @@ class Solution {
             }
         }
 
-        return fleets;
+        return fleets;*/
+
+        //using stack 
+        int n = position.length;
+        double[][] cars = new double[n][2];
+
+        for(int i=0; i<n; i++){
+            cars[i][0] = position[i];
+            cars[i][1] = speed[i];
+        }
+
+        Arrays.sort(cars, (a,b) -> Double.compare(b[0], a[0])); //sort by position desc
+
+        Stack<Double> stack = new Stack<>();
+
+        for(int i=0; i<n; i++){
+            double pos = cars[i][0];
+            double spd = cars[i][1];
+            double time = (target - pos)/spd;
+
+            if(stack.isEmpty() || stack.peek() < time){
+                stack.push(time); //new fleet else merges with fleet ahead
+            }
+        }
+        return stack.size();
     }
 }
