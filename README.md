@@ -329,6 +329,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0141-linked-list-cycle](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0141-linked-list-cycle) |
 | [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
 | [0160-intersection-of-two-linked-lists](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0160-intersection-of-two-linked-lists) |
+| [0208-implement-trie-prefix-tree](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0217-contains-duplicate) |
 | [0242-valid-anagram](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0242-valid-anagram) |
 | [0347-top-k-frequent-elements](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0347-top-k-frequent-elements) |
@@ -564,6 +565,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0115-distinct-subsequences](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0115-distinct-subsequences) |
 | [0125-valid-palindrome](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0125-valid-palindrome) |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
+| [0208-implement-trie-prefix-tree](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0242-valid-anagram](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0242-valid-anagram) |
 | [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0424-longest-repeating-character-replacement](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0424-longest-repeating-character-replacement) |
@@ -644,6 +646,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0146-lru-cache](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0155-min-stack) |
+| [0208-implement-trie-prefix-tree](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
 | [0789-kth-largest-element-in-a-stream](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0789-kth-largest-element-in-a-stream) |
 | [1995-finding-pairs-with-a-certain-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1995-finding-pairs-with-a-certain-sum) |
@@ -833,6 +836,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
+| [0208-implement-trie-prefix-tree](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0208-implement-trie-prefix-tree) |
 | [0386-lexicographical-numbers](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0386-lexicographical-numbers) |
 | [2079-delete-duplicate-folders-in-system](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2079-delete-duplicate-folders-in-system) |
 ## Hash Function
