@@ -52,6 +52,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0518-coin-change-ii](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0518-coin-change-ii) |
 | [0594-longest-harmonious-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0594-longest-harmonious-subsequence) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0698-partition-to-k-equal-sum-subsets) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0739-daily-temperatures](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0739-daily-temperatures) |
 | [0747-min-cost-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0747-min-cost-climbing-stairs) |
@@ -212,6 +213,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0583-delete-operation-for-two-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0583-delete-operation-for-two-strings) |
 | [0647-palindromic-substrings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0647-palindromic-substrings) |
 | [0673-number-of-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0673-number-of-longest-increasing-subsequence) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0698-partition-to-k-equal-sum-subsets) |
 | [0714-best-time-to-buy-and-sell-stock-with-transaction-fee](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0714-best-time-to-buy-and-sell-stock-with-transaction-fee) |
 | [0747-min-cost-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0747-min-cost-climbing-stairs) |
 | [0806-domino-and-tromino-tiling](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0806-domino-and-tromino-tiling) |
@@ -452,6 +454,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0078-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0078-subsets) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0698-partition-to-k-equal-sum-subsets) |
 | [0934-bitwise-ors-of-subarrays](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0934-bitwise-ors-of-subarrays) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
@@ -687,6 +690,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- |
 | [0070-climbing-stairs](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0139-word-break) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0698-partition-to-k-equal-sum-subsets) |
 | [1013-fibonacci-number](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1013-fibonacci-number) |
 | [1986-largest-color-value-in-a-directed-graph](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1986-largest-color-value-in-a-directed-graph) |
 | [2395-longest-binary-subsequence-less-than-or-equal-to-k](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2395-longest-binary-subsequence-less-than-or-equal-to-k) |
@@ -790,6 +794,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0039-combination-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0039-combination-sum) |
 | [0078-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0078-subsets) |
 | [0494-target-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0494-target-sum) |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0698-partition-to-k-equal-sum-subsets) |
 | [1993-sum-of-all-subset-xor-totals](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1993-sum-of-all-subset-xor-totals) |
 | [2140-longest-subsequence-repeated-k-times](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2140-longest-subsequence-repeated-k-times) |
 | [2170-count-number-of-maximum-bitwise-or-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/2170-count-number-of-maximum-bitwise-or-subsets) |
@@ -860,4 +865,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 |  |
 | ------- |
 | [0789-kth-largest-element-in-a-stream](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0789-kth-largest-element-in-a-stream) |
+## Bitmask
+|  |
+| ------- |
+| [0698-partition-to-k-equal-sum-subsets](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0698-partition-to-k-equal-sum-subsets) |
 <!---LeetCode Topics End-->
