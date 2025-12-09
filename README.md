@@ -42,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0239-sliding-window-maximum) |
 | [0271-encode-and-decode-strings](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0271-encode-and-decode-strings) |
+| [0286-walls-and-gates](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0286-walls-and-gates) |
 | [0300-longest-increasing-subsequence](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0300-longest-increasing-subsequence) |
 | [0309-best-time-to-buy-and-sell-stock-with-cooldown](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0309-best-time-to-buy-and-sell-stock-with-cooldown) |
 | [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
@@ -640,6 +641,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0102-binary-tree-level-order-traversal](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0102-binary-tree-level-order-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0199-binary-tree-right-side-view) |
 | [0200-number-of-islands](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0200-number-of-islands) |
+| [0286-walls-and-gates](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0286-walls-and-gates) |
 | [0322-coin-change](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0322-coin-change) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0945-snakes-and-ladders](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0945-snakes-and-ladders) |
@@ -677,6 +679,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0064-minimum-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0064-minimum-path-sum) |
 | [0073-set-matrix-zeroes](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0073-set-matrix-zeroes) |
 | [0200-number-of-islands](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0200-number-of-islands) |
+| [0286-walls-and-gates](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0286-walls-and-gates) |
 | [0945-snakes-and-ladders](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0945-snakes-and-ladders) |
 | [0967-minimum-falling-path-sum](https://github.com/shagunsareen/LeetcodeDSA/tree/master/0967-minimum-falling-path-sum) |
 | [1036-rotting-oranges](https://github.com/shagunsareen/LeetcodeDSA/tree/master/1036-rotting-oranges) |
